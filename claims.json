@@ -1,12 +1,6 @@
 {
- "updated": "2026-11-24T20:09Z",
+ "updated": "2026-11-24T20:10Z",
  "tasks": [
-  {
-   "id": "GPU-BLACK-WORLD",
-   "status": "open",
-   "holder": null,
-   "pr": null
-  },
   {
    "id": "GPU-HOST-MEMORY",
    "status": "open",
@@ -21,12 +15,6 @@
   },
   {
    "id": "GPU-SNAPSHOT-COST",
-   "status": "open",
-   "holder": null,
-   "pr": null
-  },
-  {
-   "id": "SHADER-GLOBAL-ATOMICS",
    "status": "open",
    "holder": null,
    "pr": null
@@ -53,6 +41,18 @@
    "id": "TEST-PUT-STRING",
    "status": "open",
    "holder": null,
+   "pr": null
+  },
+  {
+   "id": "GPU-BLACK-WORLD",
+   "status": "claimed",
+   "holder": "KevinPratap",
+   "pr": null
+  },
+  {
+   "id": "SHADER-GLOBAL-ATOMICS",
+   "status": "claimed",
+   "holder": "KevinPratap",
    "pr": null
   }
  ]
