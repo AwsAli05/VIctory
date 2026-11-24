@@ -1,44 +1,32 @@
 {
- "updated": "2026-11-24T20:10Z",
+ "updated": "2026-11-24T20:46Z",
  "tasks": [
   {
-   "id": "GPU-HOST-MEMORY",
+   "id": "FIND-1",
    "status": "open",
    "holder": null,
    "pr": null
   },
   {
-   "id": "GPU-PIPELINE-LIBRARY-SIZE",
+   "id": "FIND-2",
    "status": "open",
    "holder": null,
    "pr": null
   },
   {
-   "id": "GPU-SNAPSHOT-COST",
+   "id": "FIND-3",
    "status": "open",
    "holder": null,
    "pr": null
   },
   {
-   "id": "SHADER-MESH-LANES-AMD",
+   "id": "FIND-4",
    "status": "open",
    "holder": null,
    "pr": null
   },
   {
-   "id": "TEST-FRAME-WAITS",
-   "status": "open",
-   "holder": null,
-   "pr": null
-  },
-  {
-   "id": "TEST-MED3-NAN",
-   "status": "open",
-   "holder": null,
-   "pr": null
-  },
-  {
-   "id": "TEST-PUT-STRING",
+   "id": "FIND-5",
    "status": "open",
    "holder": null,
    "pr": null
@@ -50,10 +38,124 @@
    "pr": null
   },
   {
+   "id": "GPU-HOST-MEMORY",
+   "status": "claimed",
+   "holder": "aycow",
+   "pr": null
+  },
+  {
+   "id": "NEW-1",
+   "status": "claimed",
+   "holder": "oddmaniv",
+   "pr": null
+  },
+  {
+   "id": "NEW-2",
+   "status": "claimed",
+   "holder": "pes7",
+   "pr": null
+  },
+  {
+   "id": "NEW-3",
+   "status": "claimed",
+   "holder": "pes7",
+   "pr": null
+  },
+  {
+   "id": "NEW-4",
+   "status": "claimed",
+   "holder": "pes7",
+   "pr": null
+  },
+  {
+   "id": "NEW-5",
+   "status": "claimed",
+   "holder": "pes7",
+   "pr": null
+  },
+  {
+   "id": "NEW-6",
+   "status": "claimed",
+   "holder": "pes7",
+   "pr": null
+  },
+  {
+   "id": "NEW-7",
+   "status": "claimed",
+   "holder": "fiestorra",
+   "pr": null
+  },
+  {
+   "id": "NEW-8",
+   "status": "claimed",
+   "holder": "Elensito",
+   "pr": null
+  },
+  {
+   "id": "NEW-9",
+   "status": "claimed",
+   "holder": "fiestorra",
+   "pr": null
+  },
+  {
+   "id": "NEW-10",
+   "status": "claimed",
+   "holder": "pedrofort",
+   "pr": null
+  },
+  {
+   "id": "NEW-11",
+   "status": "claimed",
+   "holder": "Elensito",
+   "pr": null
+  },
+  {
+   "id": "NEW-12",
+   "status": "claimed",
+   "holder": "alexdeliu",
+   "pr": null
+  },
+  {
    "id": "SHADER-GLOBAL-ATOMICS",
    "status": "claimed",
    "holder": "KevinPratap",
    "pr": null
+  },
+  {
+   "id": "SHADER-MESH-LANES-AMD",
+   "status": "claimed",
+   "holder": "aycow",
+   "pr": null
+  },
+  {
+   "id": "TEST-FRAME-WAITS",
+   "status": "claimed",
+   "holder": "avt0m4t48",
+   "pr": null
+  },
+  {
+   "id": "TEST-MED3-NAN",
+   "status": "claimed",
+   "holder": "aycow",
+   "pr": null
+  },
+  {
+   "id": "TEST-PUT-STRING",
+   "status": "claimed",
+   "holder": "avt0m4t48",
+   "pr": null
+  },
+  {
+   "id": "GPU-PIPELINE-LIBRARY-SIZE",
+   "status": "in review",
+   "holder": "avt0m4t48",
+   "pr": 1651
+  },
+  {
+   "id": "GPU-SNAPSHOT-COST",
+   "status": "in review",
+   "holder": "avt0m4t48",
+   "pr": 1681
   }
  ]
 }
