@@ -3473,5 +3473,59 @@ mod present_plane_tests {
             host.present(&[(&scene, state)], 3).is_some(),
             "single-plane presentation after compositor initialization failed"
         );
+        assert!(
+            host.present(&[(&scene, state), (&overlay, state)], 4)
+                .is_some(),
+            "compositor initialization can be retried after failure"
+        );
+        let back = {
+            let presenter = host.presenter.lock().unwrap_or_else(|e| e.into_inner());
+            let presenter = presenter.as_ref().unwrap();
+            // SAFETY: the swap chain owns BUFFERS live back buffers. Present advanced
+            // its index, so the preceding buffer holds the frame just composed.
+            unsafe {
+                let index =
+                    (presenter.swap_chain.GetCurrentBackBufferIndex() + BUFFERS - 1) % BUFFERS;
+                presenter
+                    .swap_chain
+                    .GetBuffer::<ID3D12Resource>(index)
+                    .unwrap()
+            }
+        };
+        let copy = host.new_list().unwrap();
+        // SAFETY: the preceding presentation completed, the back buffer is live,
+        // and this list is open. Restore PRESENT after reading its contents.
+        let (buffer, footprint) = unsafe {
+            copy.list.ResourceBarrier(&[transition(
+                &back,
+                D3D12_RESOURCE_STATE_PRESENT,
+                D3D12_RESOURCE_STATE_COPY_SOURCE,
+            )]);
+            let readback = crate::capture::read_back(&host.device, &copy.list, &back).unwrap();
+            copy.list.ResourceBarrier(&[transition(
+                &back,
+                D3D12_RESOURCE_STATE_COPY_SOURCE,
+                D3D12_RESOURCE_STATE_PRESENT,
+            )]);
+            readback
+        };
+        copy.close();
+        host.execute(&[&copy]);
+        let mut mapped = std::ptr::null_mut();
+        // SAFETY: execute waited for the copy; the footprint contains at least
+        // one RGBA pixel. Copy that pixel before unmapping the readback buffer.
+        let pixel = unsafe {
+            buffer.Map(0, None, Some(&mut mapped)).unwrap();
+            let pixel = mapped
+                .cast::<u8>()
+                .add(footprint.Offset as usize)
+                .cast::<[u8; 4]>()
+                .read();
+            buffer.Unmap(0, None);
+            pixel
+        };
+        // Premultiplied half-blue over opaque red: neither an ignored overlay
+        // (red) nor a replaced scene (blue) may pass this check.
+        assert_eq!(pixel, [127, 0, 128, 255]);
     }
 }
