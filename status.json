@@ -1,0 +1,9292 @@
+{
+ "generated": "2026-11-24 19:48 UTC",
+ "base": "ffe310eb2098e52169f4c44db5ffdabf43a72622",
+ "head": "86f08ea80063d8b4b79205ff192ea0373e9f422a",
+ "branch": "forge/main",
+ "status": {
+  "12": {
+   "result": "in forge"
+  },
+  "24": {
+   "result": "in forge"
+  },
+  "32": {
+   "result": "in forge"
+  },
+  "52": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32
+   ]
+  },
+  "55": {
+   "result": "in forge"
+  },
+  "67": {
+   "result": "breaks the build",
+   "detail": [
+    "crates\\victory-gpu\\src\\list.rs:624:36: error[E0308]: mismatched types: expected `&HostList`, found `Arc<HostList>`",
+    "crates\\victory-gpu\\src\\list.rs:625:26: error[E0308]: mismatched types: expected `&HostList`, found `Arc<HostList>`",
+    "error: could not compile `victory-gpu` (lib) due to 2 previous errors"
+   ]
+  },
+  "69": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/structure.rs"
+   ]
+  },
+  "72": {
+   "result": "in forge"
+  },
+  "73": {
+   "result": "in forge"
+  },
+  "76": {
+   "result": "in forge"
+  },
+  "78": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "82": {
+   "result": "in forge"
+  },
+  "83": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs"
+   ]
+  },
+  "86": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs"
+   ]
+  },
+  "89": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/list.rs"
+   ]
+  },
+  "91": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "92": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "96": {
+   "result": "in forge"
+  },
+  "98": {
+   "result": "in forge"
+  },
+  "100": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs"
+   ]
+  },
+  "101": {
+   "result": "breaks the build",
+   "detail": [
+    "crates\\victory-shader\\src\\emit\\lower.rs:7488:19: error[E0061]: this function takes 4 arguments but 3 arguments were supplied",
+    "error: could not compile `victory-shader` (lib test) due to 1 previous error"
+   ]
+  },
+  "105": {
+   "result": "in forge"
+  },
+  "109": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "112": {
+   "result": "in forge"
+  },
+  "113": {
+   "result": "in forge"
+  },
+  "114": {
+   "result": "in forge"
+  },
+  "115": {
+   "result": "in forge"
+  },
+  "116": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    101
+   ]
+  },
+  "119": {
+   "result": "in forge"
+  },
+  "120": {
+   "result": "breaks the build",
+   "detail": [
+    "crates\\victory-shader\\src\\emit\\lower.rs:7408:13: error[E0061]: this function takes 2 arguments but 1 argument was supplied",
+    "error: could not compile `victory-shader` (lib test) due to 1 previous error"
+   ]
+  },
+  "122": {
+   "result": "in forge"
+  },
+  "123": {
+   "result": "in forge"
+  },
+  "124": {
+   "result": "in forge"
+  },
+  "126": {
+   "result": "in forge"
+  },
+  "130": {
+   "result": "in forge"
+  },
+  "132": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xasync.rs"
+   ],
+   "with": [
+    114,
+    122
+   ]
+  },
+  "133": {
+   "result": "in forge"
+  },
+  "137": {
+   "result": "draft"
+  },
+  "138": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "139": {
+   "result": "in forge"
+  },
+  "142": {
+   "result": "in forge"
+  },
+  "143": {
+   "result": "in forge"
+  },
+  "145": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "148": {
+   "result": "breaks the build",
+   "detail": [
+    "crates\\victory-shader\\src\\emit\\lower.rs:7458:13: error[E0061]: this function takes 2 arguments but 1 argument was supplied",
+    "crates\\victory-shader\\src\\emit\\lower.rs:7470:13: error[E0061]: this function takes 2 arguments but 1 argument was supplied",
+    "error: could not compile `victory-shader` (lib test) due to 2 previous errors"
+   ]
+  },
+  "150": {
+   "result": "in forge"
+  },
+  "151": {
+   "result": "in forge"
+  },
+  "153": {
+   "result": "in forge"
+  },
+  "156": {
+   "result": "in forge"
+  },
+  "157": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ]
+  },
+  "158": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130
+   ]
+  },
+  "159": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    130
+   ]
+  },
+  "160": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/gfx10/fields.rs"
+   ],
+   "with": [
+    73,
+    142,
+    148,
+    156
+   ]
+  },
+  "162": {
+   "result": "in forge"
+  },
+  "164": {
+   "result": "in forge"
+  },
+  "165": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    142,
+    164
+   ]
+  },
+  "166": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    142,
+    164
+   ]
+  },
+  "168": {
+   "result": "in forge"
+  },
+  "169": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    148,
+    156,
+    162,
+    164,
+    168
+   ]
+  },
+  "171": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    142,
+    164
+   ]
+  },
+  "172": {
+   "result": "in forge"
+  },
+  "174": {
+   "result": "in forge"
+  },
+  "175": {
+   "result": "conflicts with main",
+   "files": [
+    "apps/victory/src/main.rs"
+   ]
+  },
+  "176": {
+   "result": "in forge"
+  },
+  "177": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    148,
+    156,
+    162,
+    164,
+    168,
+    176
+   ]
+  },
+  "178": {
+   "result": "in forge"
+  },
+  "180": {
+   "result": "in forge"
+  },
+  "182": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/files.rs"
+   ],
+   "with": [
+    130,
+    133
+   ]
+  },
+  "183": {
+   "result": "in forge"
+  },
+  "185": {
+   "result": "draft"
+  },
+  "186": {
+   "result": "in forge"
+  },
+  "188": {
+   "result": "in forge"
+  },
+  "189": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shader_cache.rs",
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    130,
+    142,
+    148,
+    156,
+    162,
+    164,
+    168
+   ]
+  },
+  "190": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/Cargo.toml",
+    "crates/victory-gpu/src/indirect.rs"
+   ],
+   "with": [
+    130,
+    178
+   ]
+  },
+  "192": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "193": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "194": {
+   "result": "in forge"
+  },
+  "197": {
+   "result": "in forge"
+  },
+  "200": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    142,
+    164
+   ]
+  },
+  "202": {
+   "result": "in forge"
+  },
+  "206": {
+   "result": "draft"
+  },
+  "207": {
+   "result": "in forge"
+  },
+  "208": {
+   "result": "in forge"
+  },
+  "211": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/queue.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208
+   ]
+  },
+  "212": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208
+   ]
+  },
+  "213": {
+   "result": "in forge"
+  },
+  "214": {
+   "result": "in forge"
+  },
+  "216": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-loader/src/crash.rs"
+   ]
+  },
+  "217": {
+   "result": "in forge"
+  },
+  "218": {
+   "result": "in forge"
+  },
+  "219": {
+   "result": "in forge"
+  },
+  "221": {
+   "result": "in forge"
+  },
+  "222": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/apu.rs"
+   ],
+   "with": [
+    130,
+    218
+   ]
+  },
+  "223": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs"
+   ],
+   "with": [
+    112
+   ]
+  },
+  "224": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/run.rs"
+   ],
+   "with": [
+    12,
+    112,
+    130
+   ]
+  },
+  "226": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "228": {
+   "result": "in forge"
+  },
+  "230": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ]
+  },
+  "231": {
+   "result": "draft"
+  },
+  "232": {
+   "result": "in forge"
+  },
+  "233": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs"
+   ],
+   "with": [
+    112
+   ]
+  },
+  "234": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-hle/src/modules/xmem.rs"
+   ]
+  },
+  "235": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs",
+    "crates/victory-hle/src/modules/gameinput.rs",
+    "crates/victory-hle/src/modules/mod.rs",
+    "crates/victory-hle/src/modules/xgame.rs",
+    "crates/victory-hle/src/modules/xgameui.rs"
+   ],
+   "with": [
+    112,
+    150,
+    197,
+    218
+   ]
+  },
+  "236": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xasync.rs"
+   ],
+   "with": [
+    114,
+    122
+   ]
+  },
+  "237": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/apu.rs",
+    "crates/victory-hle/src/modules/audio.rs",
+    "crates/victory-hle/src/modules/gameinput.rs",
+    "crates/victory-hle/src/modules/xasync.rs"
+   ],
+   "with": [
+    114,
+    122,
+    130,
+    150,
+    194,
+    197,
+    218
+   ]
+  },
+  "238": {
+   "result": "in forge"
+  },
+  "240": {
+   "result": "in forge"
+  },
+  "241": {
+   "result": "breaks the build",
+   "detail": [
+    "crates\\victory-core\\src\\config.rs:7604:22: error[E0433]: cannot find `unix` in `os`: could not find `unix` in `os`",
+    "crates\\victory-core\\src\\config.rs:7568:34: error[E0433]: cannot find `unix` in `os`: could not find `unix` in `os`",
+    "crates\\victory-core\\src\\config.rs:7569:18: error[E0433]: cannot find `unix` in `os`: could not find `unix` in `os`"
+   ]
+  },
+  "242": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/draw.rs"
+   ]
+  },
+  "244": {
+   "result": "in forge"
+  },
+  "246": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "xtask/src/main.rs"
+   ],
+   "with": [
+    112
+   ]
+  },
+  "247": {
+   "result": "in forge"
+  },
+  "250": {
+   "result": "conflicts with main",
+   "files": [
+    "apps/victory/src/main.rs",
+    "crates/victory-core/src/config.rs"
+   ]
+  },
+  "254": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs",
+    "crates/victory-gpu/src/shader_cache.rs"
+   ],
+   "with": [
+    112,
+    130
+   ]
+  },
+  "256": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-hle/src/modules/net.rs"
+   ]
+  },
+  "259": {
+   "result": "in forge"
+  },
+  "261": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    124
+   ]
+  },
+  "263": {
+   "result": "in forge"
+  },
+  "265": {
+   "result": "in forge"
+  },
+  "269": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ]
+  },
+  "270": {
+   "result": "in forge"
+  },
+  "273": {
+   "result": "in forge"
+  },
+  "275": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline/library.rs",
+    "crates/victory-gpu/src/pipeline/make.rs"
+   ],
+   "with": [
+    72,
+    130
+   ]
+  },
+  "278": {
+   "result": "in forge"
+  },
+  "279": {
+   "result": "in forge"
+  },
+  "280": {
+   "result": "in forge"
+  },
+  "281": {
+   "result": "draft"
+  },
+  "282": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/indirect.rs"
+   ],
+   "with": [
+    178
+   ]
+  },
+  "284": {
+   "result": "in forge"
+  },
+  "286": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    142,
+    164,
+    265
+   ]
+  },
+  "288": {
+   "result": "in forge"
+  },
+  "290": {
+   "result": "in forge"
+  },
+  "292": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs",
+    "crates/victory-shader/src/structure.rs"
+   ]
+  },
+  "294": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/shader.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ]
+  },
+  "298": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "299": {
+   "result": "in forge"
+  },
+  "301": {
+   "result": "breaks the build",
+   "detail": [
+    "crates\\victory-gpu\\src\\list.rs:597:26: error[E0308]: mismatched types: expected `&HostList`, found `Arc<HostList>`",
+    "crates\\victory-gpu\\src\\list.rs:598:28: error[E0308]: mismatched types: expected `&HostList`, found `Arc<HostList>`",
+    "crates\\victory-gpu\\src\\list.rs:599:31: error[E0308]: mismatched types: expected `&HostList`, found `Arc<HostList>`"
+   ]
+  },
+  "302": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs"
+   ]
+  },
+  "305": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/shader.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "306": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs",
+    "crates/victory-shader/src/gfx10/fields.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "308": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/wave.rs"
+   ],
+   "with": [
+    98
+   ]
+  },
+  "309": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs"
+   ]
+  },
+  "310": {
+   "result": "in forge"
+  },
+  "311": {
+   "result": "in forge"
+  },
+  "312": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/gameinput.rs"
+   ],
+   "with": [
+    150,
+    197
+   ]
+  },
+  "315": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-formats/src/texture.rs",
+    "crates/victory-formats/src/xma.rs"
+   ],
+   "with": [
+    96,
+    172,
+    183,
+    263
+   ]
+  },
+  "317": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "318": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "319": {
+   "result": "in forge"
+  },
+  "320": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs",
+    "crates/victory-shader/src/emit/host.rs"
+   ],
+   "with": [
+    112,
+    164,
+    244
+   ]
+  },
+  "321": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/frame.rs"
+   ],
+   "with": [
+    174,
+    319
+   ]
+  },
+  "322": {
+   "result": "in forge"
+  },
+  "323": {
+   "result": "in forge"
+  },
+  "324": {
+   "result": "held",
+   "detail": "In the title: refuses TLS arrays the loader read leniently; the title stops loading."
+  },
+  "326": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "328": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "329": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ]
+  },
+  "331": {
+   "result": "in forge"
+  },
+  "332": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "333": {
+   "result": "in forge"
+  },
+  "334": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322
+   ]
+  },
+  "335": {
+   "result": "in forge"
+  },
+  "337": {
+   "result": "in forge"
+  },
+  "342": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "343": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/dxbc.rs"
+   ],
+   "with": [
+    273
+   ]
+  },
+  "345": {
+   "result": "in forge"
+  },
+  "346": {
+   "result": "in forge"
+  },
+  "347": {
+   "result": "in forge"
+  },
+  "351": {
+   "result": "in forge"
+  },
+  "352": {
+   "result": "in forge"
+  },
+  "353": {
+   "result": "in forge"
+  },
+  "354": {
+   "result": "in forge"
+  },
+  "357": {
+   "result": "in forge"
+  },
+  "358": {
+   "result": "in forge"
+  },
+  "359": {
+   "result": "in forge"
+  },
+  "361": {
+   "result": "in forge"
+  },
+  "362": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md",
+    "apps/victory/build.rs",
+    "crates/victory-shader/src/emit/host.rs",
+    "xtask/src/main.rs"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    151,
+    164,
+    178,
+    244
+   ]
+  },
+  "363": {
+   "result": "in forge"
+  },
+  "364": {
+   "result": "in forge"
+  },
+  "368": {
+   "result": "in forge"
+  },
+  "369": {
+   "result": "in forge"
+  },
+  "370": {
+   "result": "in forge"
+  },
+  "373": {
+   "result": "in forge"
+  },
+  "374": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xasync.rs"
+   ],
+   "with": [
+    114,
+    122,
+    247
+   ]
+  },
+  "378": {
+   "result": "in forge"
+  },
+  "379": {
+   "result": "in forge"
+  },
+  "383": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ]
+  },
+  "385": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ]
+  },
+  "387": {
+   "result": "draft"
+  },
+  "388": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/texture.rs"
+   ],
+   "with": [
+    130,
+    143
+   ]
+  },
+  "389": {
+   "result": "draft"
+  },
+  "390": {
+   "result": "draft"
+  },
+  "391": {
+   "result": "draft"
+  },
+  "393": {
+   "result": "in forge"
+  },
+  "395": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "398": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-hle/src/modules/xuser.rs"
+   ]
+  },
+  "401": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/shadow.rs",
+    "crates/victory-gpu/src/texture.rs"
+   ],
+   "with": [
+    32,
+    124,
+    130,
+    143,
+    202,
+    208,
+    279,
+    322
+   ]
+  },
+  "402": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    124
+   ]
+  },
+  "404": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "409": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    130,
+    217,
+    331
+   ]
+  },
+  "411": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline/host.rs",
+    "crates/victory-shader/src/emit/shader.rs"
+   ],
+   "with": [
+    164,
+    352
+   ]
+  },
+  "412": {
+   "result": "in forge"
+  },
+  "413": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/descriptor.rs",
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/watch.rs"
+   ]
+  },
+  "415": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shader_cache.rs"
+   ],
+   "with": [
+    130,
+    358
+   ]
+  },
+  "416": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379
+   ]
+  },
+  "420": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/resource.rs"
+   ],
+   "with": [
+    139,
+    368
+   ]
+  },
+  "421": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/files.rs"
+   ],
+   "with": [
+    130,
+    133,
+    290
+   ]
+  },
+  "422": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379
+   ]
+  },
+  "424": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280,
+    299
+   ]
+  },
+  "425": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-game/src/sgd5.rs"
+   ],
+   "with": [
+    273
+   ]
+  },
+  "426": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ]
+  },
+  "427": {
+   "result": "in forge"
+  },
+  "428": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/gameinput.rs"
+   ],
+   "with": [
+    150,
+    197,
+    361
+   ]
+  },
+  "430": {
+   "result": "in forge"
+  },
+  "431": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    130,
+    217,
+    331
+   ]
+  },
+  "434": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "435": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "436": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    124
+   ]
+  },
+  "437": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "438": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs",
+    "crates/victory-hle/src/modules/mod.rs",
+    "crates/victory-hle/src/modules/xgame.rs",
+    "crates/victory-hle/src/modules/xgameui.rs"
+   ],
+   "with": [
+    112,
+    150,
+    218,
+    240,
+    290,
+    370,
+    378
+   ]
+  },
+  "439": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/main.rs",
+    "apps/victory/src/translate.rs",
+    "crates/victory-gpu/src/shader_cache.rs",
+    "crates/victory-shader/src/emit/host.rs",
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    98,
+    112,
+    130,
+    142,
+    156,
+    162,
+    164
+   ]
+  },
+  "441": {
+   "result": "conflicts with main",
+   "files": [
+    "apps/victory/src/main.rs"
+   ]
+  },
+  "443": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-formats/src/xma.rs",
+    "crates/victory-hle/src/modules/audio.rs"
+   ],
+   "with": [
+    96,
+    130,
+    172,
+    183,
+    194,
+    364
+   ]
+  },
+  "446": {
+   "result": "in forge"
+  },
+  "447": {
+   "result": "in forge"
+  },
+  "449": {
+   "result": "in forge"
+  },
+  "450": {
+   "result": "in forge"
+  },
+  "451": {
+   "result": "in forge"
+  },
+  "452": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280,
+    299
+   ]
+  },
+  "453": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "454": {
+   "result": "in forge"
+  },
+  "455": {
+   "result": "in forge"
+  },
+  "456": {
+   "result": "in forge"
+  },
+  "457": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "458": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "460": {
+   "result": "in forge"
+  },
+  "461": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    450
+   ]
+  },
+  "463": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/build.rs"
+   ],
+   "with": [
+    151
+   ]
+  },
+  "464": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/watch.rs"
+   ]
+  },
+  "465": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "469": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    130,
+    217,
+    331,
+    450
+   ]
+  },
+  "470": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "472": {
+   "result": "in forge"
+  },
+  "474": {
+   "result": "in forge"
+  },
+  "475": {
+   "result": "in forge"
+  },
+  "476": {
+   "result": "in forge"
+  },
+  "477": {
+   "result": "in forge"
+  },
+  "478": {
+   "result": "in forge"
+  },
+  "480": {
+   "result": "in forge"
+  },
+  "481": {
+   "result": "conflicts with pull requests",
+   "files": [
+    ".github/workflows/ci.yml"
+   ],
+   "with": [
+    232
+   ]
+  },
+  "482": {
+   "result": "in forge"
+  },
+  "483": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ]
+  },
+  "484": {
+   "result": "in forge"
+  },
+  "485": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    32,
+    346,
+    427,
+    450
+   ]
+  },
+  "486": {
+   "result": "in forge"
+  },
+  "487": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/runtime.rs"
+   ],
+   "with": [
+    337,
+    359
+   ]
+  },
+  "488": {
+   "result": "in forge"
+  },
+  "489": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/native.rs"
+   ],
+   "with": [
+    333
+   ]
+  },
+  "490": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/watch.rs"
+   ]
+  },
+  "491": {
+   "result": "in forge"
+  },
+  "492": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs"
+   ],
+   "with": [
+    123,
+    130,
+    331
+   ]
+  },
+  "493": {
+   "result": "in forge"
+  },
+  "494": {
+   "result": "in forge"
+  },
+  "497": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/watch.rs"
+   ]
+  },
+  "498": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "499": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "500": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/capture.rs"
+   ],
+   "with": [
+    488
+   ]
+  },
+  "501": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "502": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-formats/src/xma.rs",
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/indirect.rs",
+    "crates/victory-gpu/src/pipeline/library.rs"
+   ],
+   "with": [
+    12,
+    32,
+    72,
+    96,
+    112,
+    123,
+    130,
+    172
+   ]
+  },
+  "503": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xasync.rs"
+   ],
+   "with": [
+    114,
+    122,
+    247
+   ]
+  },
+  "504": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    130,
+    217,
+    331,
+    450
+   ]
+  },
+  "505": {
+   "result": "in forge"
+  },
+  "506": {
+   "result": "in forge"
+  },
+  "509": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/indirect.rs",
+    "crates/victory-gpu/src/pipeline/make.rs"
+   ],
+   "with": [
+    32,
+    130,
+    178,
+    202,
+    208,
+    279,
+    322,
+    346
+   ]
+  },
+  "511": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "512": {
+   "result": "in forge"
+  },
+  "513": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/run.rs"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    238,
+    482
+   ]
+  },
+  "514": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/watch.rs"
+   ]
+  },
+  "515": {
+   "result": "in forge"
+  },
+  "517": {
+   "result": "in forge"
+  },
+  "519": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xgameui.rs"
+   ],
+   "with": [
+    112,
+    370
+   ]
+  },
+  "521": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447
+   ]
+  },
+  "522": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xpackage.rs"
+   ],
+   "with": [
+    412
+   ]
+  },
+  "523": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs",
+    "crates/victory-hle/src/modules/d3d12x.rs",
+    "crates/victory-hle/src/modules/kernel.rs",
+    "crates/victory-hle/src/modules/storage.rs",
+    "crates/victory-hle/src/modules/xgame.rs"
+   ],
+   "with": [
+    12,
+    112,
+    186,
+    370,
+    373,
+    378,
+    455,
+    512
+   ]
+  },
+  "524": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/dxgi.rs",
+    "crates/victory-gpu/src/object.rs",
+    "crates/victory-hle/src/modules/storage.rs",
+    "crates/victory-hle/src/modules/xuser.rs"
+   ]
+  },
+  "526": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/dxgi.rs",
+    "crates/victory-gpu/src/object.rs",
+    "crates/victory-gpu/src/watch.rs",
+    "crates/victory-hle/src/modules/files.rs",
+    "crates/victory-hle/src/modules/storage.rs"
+   ]
+  },
+  "528": {
+   "result": "in forge"
+  },
+  "529": {
+   "result": "in forge"
+  },
+  "530": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "531": {
+   "result": "in forge"
+  },
+  "532": {
+   "result": "in forge"
+  },
+  "534": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/shader.rs",
+    "apps/victory/src/translate.rs"
+   ],
+   "with": [
+    112,
+    273,
+    353,
+    378,
+    517
+   ]
+  },
+  "535": {
+   "result": "in forge"
+  },
+  "536": {
+   "result": "in forge"
+  },
+  "537": {
+   "result": "in forge"
+  },
+  "538": {
+   "result": "in forge"
+  },
+  "539": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/shader.rs"
+   ],
+   "with": [
+    164
+   ]
+  },
+  "540": {
+   "result": "in forge"
+  },
+  "541": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/object.rs"
+   ],
+   "with": [
+    32,
+    153,
+    270
+   ]
+  },
+  "542": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ]
+  },
+  "543": {
+   "result": "conflicts with pull requests",
+   "files": [
+    ".github/pull_request_template.md"
+   ],
+   "with": [
+    113
+   ]
+  },
+  "544": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xasync.rs"
+   ],
+   "with": [
+    114,
+    122,
+    247
+   ]
+  },
+  "545": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "xtask/src/main.rs"
+   ],
+   "with": [
+    112
+   ]
+  },
+  "546": {
+   "result": "draft"
+  },
+  "547": {
+   "result": "in forge"
+  },
+  "549": {
+   "result": "in forge"
+  },
+  "550": {
+   "result": "in forge"
+  },
+  "551": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "553": {
+   "result": "in forge"
+  },
+  "555": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-pe/src/image.rs"
+   ],
+   "with": [
+    112,
+    219,
+    529
+   ]
+  },
+  "558": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md",
+    "apps/victory/src/run.rs"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    238,
+    279,
+    280
+   ]
+  },
+  "559": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/list.rs",
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    24,
+    32,
+    55,
+    112,
+    130,
+    217,
+    331,
+    346
+   ]
+  },
+  "560": {
+   "result": "in forge"
+  },
+  "561": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-hle/src/modules/xmem.rs"
+   ]
+  },
+  "562": {
+   "result": "draft"
+  },
+  "563": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "568": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "569": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "570": {
+   "result": "in forge"
+  },
+  "571": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447
+   ]
+  },
+  "572": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280,
+    299
+   ]
+  },
+  "573": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "574": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/gameinput.rs"
+   ],
+   "with": [
+    150,
+    197,
+    361
+   ]
+  },
+  "575": {
+   "result": "in forge"
+  },
+  "576": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "577": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/dstorage.rs"
+   ],
+   "with": [
+    130,
+    430,
+    472
+   ]
+  },
+  "578": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline/host.rs"
+   ],
+   "with": [
+    352,
+    491,
+    493
+   ]
+  },
+  "579": {
+   "result": "in forge"
+  },
+  "580": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "CONTRIBUTING.md"
+   ],
+   "with": [
+    112
+   ]
+  },
+  "581": {
+   "result": "breaks the build",
+   "detail": [
+    "crates\\victory-gpu\\src\\host.rs:1580:37: error[E0599]: no method named `GetDesc` found for enum `Option<T>` in the current scope: method not found in `Option<&Direct3D12::ID3D12Resource>`",
+    "error: could not compile `victory-gpu` (lib) due to 1 previous error",
+    "error: could not compile `victory-gpu` (lib test) due to 1 previous error"
+   ]
+  },
+  "582": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/list.rs",
+    "crates/victory-gpu/src/pipeline/host.rs"
+   ],
+   "with": [
+    24,
+    32,
+    346,
+    352,
+    427,
+    450,
+    491,
+    493
+   ]
+  },
+  "583": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/indirect.rs",
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    32,
+    124,
+    130,
+    178,
+    202,
+    208,
+    279,
+    322
+   ]
+  },
+  "584": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/shader.rs"
+   ]
+  },
+  "585": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "586": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/list.rs",
+    "crates/victory-gpu/src/watch.rs",
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs"
+   ]
+  },
+  "587": {
+   "result": "in forge"
+  },
+  "588": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    124,
+    472,
+    575
+   ]
+  },
+  "589": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "590": {
+   "result": "in forge"
+  },
+  "591": {
+   "result": "in forge"
+  },
+  "592": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "594": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/list.rs",
+    "crates/victory-gpu/src/queue.rs",
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    24,
+    32,
+    55,
+    112,
+    130,
+    202,
+    208,
+    217
+   ]
+  },
+  "595": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/draw.rs"
+   ]
+  },
+  "596": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447
+   ]
+  },
+  "599": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "601": {
+   "result": "in forge"
+  },
+  "602": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/copystat.rs",
+    "crates/victory-gpu/src/texture.rs"
+   ],
+   "with": [
+    130,
+    143,
+    472,
+    484,
+    601
+   ]
+  },
+  "603": {
+   "result": "in forge"
+  },
+  "605": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447
+   ]
+  },
+  "606": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447
+   ]
+  },
+  "608": {
+   "result": "breaks the build",
+   "detail": [
+    "crates\\victory-shader\\src\\emit\\lower.rs:9064:9: error[E0061]: this function takes 2 arguments but 1 argument was supplied",
+    "crates\\victory-shader\\src\\emit\\lower.rs:9076:9: error[E0061]: this function takes 2 arguments but 1 argument was supplied",
+    "crates\\victory-shader\\src\\emit\\lower.rs:9087:9: error[E0061]: this function takes 2 arguments but 1 argument was supplied"
+   ]
+  },
+  "609": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    123,
+    130,
+    202,
+    208,
+    279,
+    322,
+    331
+   ]
+  },
+  "613": {
+   "result": "in forge"
+  },
+  "615": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "616": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    32,
+    346,
+    427,
+    450,
+    493,
+    550,
+    581,
+    591
+   ]
+  },
+  "617": {
+   "result": "in forge"
+  },
+  "618": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline/host.rs"
+   ],
+   "with": [
+    352,
+    491,
+    493
+   ]
+  },
+  "620": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/gameinput.rs"
+   ],
+   "with": [
+    150,
+    197,
+    361,
+    613
+   ]
+  },
+  "621": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "623": {
+   "result": "in forge"
+  },
+  "624": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/dstorage.rs"
+   ],
+   "with": [
+    130,
+    430,
+    472
+   ]
+  },
+  "626": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline/host.rs"
+   ],
+   "with": [
+    352,
+    491,
+    493,
+    623
+   ]
+  },
+  "627": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs",
+    "crates/victory-shader/src/ir.rs"
+   ],
+   "with": [
+    105,
+    168,
+    284,
+    369,
+    379,
+    447,
+    608
+   ]
+  },
+  "628": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "629": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-formats/src/texture.rs"
+   ],
+   "with": [
+    263,
+    351,
+    603
+   ]
+  },
+  "631": {
+   "result": "in forge"
+  },
+  "632": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "633": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/kernel.rs"
+   ],
+   "with": [
+    12,
+    112,
+    186,
+    373,
+    512
+   ]
+  },
+  "635": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs"
+   ],
+   "with": [
+    123,
+    130,
+    331,
+    493,
+    575,
+    581
+   ]
+  },
+  "636": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/mod.rs"
+   ],
+   "with": [
+    112,
+    150,
+    218,
+    240,
+    290
+   ]
+  },
+  "638": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/pipeline.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "640": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline/library.rs"
+   ],
+   "with": [
+    72,
+    347
+   ]
+  },
+  "641": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/texture.rs"
+   ],
+   "with": [
+    130,
+    143,
+    472,
+    601
+   ]
+  },
+  "642": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    450
+   ]
+  },
+  "643": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    130,
+    217,
+    331,
+    450,
+    581
+   ]
+  },
+  "644": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/draw.rs"
+   ]
+  },
+  "645": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs",
+    "crates/victory-shader/src/resource.rs"
+   ]
+  },
+  "646": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/wave.rs"
+   ],
+   "with": [
+    98
+   ]
+  },
+  "648": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xuser.rs"
+   ],
+   "with": [
+    623
+   ]
+  },
+  "649": {
+   "result": "in forge"
+  },
+  "650": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ]
+  },
+  "651": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs"
+   ]
+  },
+  "652": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    450
+   ]
+  },
+  "655": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "656": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/gameinput.rs"
+   ],
+   "with": [
+    150,
+    197,
+    361,
+    613
+   ]
+  },
+  "658": {
+   "result": "in forge"
+  },
+  "659": {
+   "result": "in forge"
+  },
+  "660": {
+   "result": "in forge"
+  },
+  "661": {
+   "result": "in forge"
+  },
+  "662": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/dsp.rs"
+   ],
+   "with": [
+    240
+   ]
+  },
+  "663": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/media.rs"
+   ],
+   "with": [
+    207,
+    480
+   ]
+  },
+  "664": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs"
+   ],
+   "with": [
+    112,
+    378,
+    517
+   ]
+  },
+  "665": {
+   "result": "in forge"
+  },
+  "667": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "668": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447
+   ]
+  },
+  "669": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "670": {
+   "result": "in forge"
+  },
+  "672": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md",
+    "apps/victory/src/main.rs",
+    "apps/victory/src/translate.rs",
+    "crates/victory-shader/src/resource.rs"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    139,
+    150,
+    178,
+    279,
+    280
+   ]
+  },
+  "673": {
+   "result": "in forge"
+  },
+  "674": {
+   "result": "in forge"
+  },
+  "677": {
+   "result": "in forge"
+  },
+  "679": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/run.rs"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    238,
+    482
+   ]
+  },
+  "682": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447
+   ]
+  },
+  "683": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    142,
+    164,
+    265,
+    660
+   ]
+  },
+  "684": {
+   "result": "in forge"
+  },
+  "686": {
+   "result": "in forge"
+  },
+  "687": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xasync.rs",
+    "crates/victory-hle/src/modules/xmem.rs"
+   ],
+   "with": [
+    76,
+    114,
+    122,
+    130,
+    247,
+    538
+   ]
+  },
+  "688": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/queue.rs"
+   ],
+   "with": [
+    32,
+    346,
+    427,
+    450,
+    493,
+    550,
+    591
+   ]
+  },
+  "690": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/primitive.rs"
+   ]
+  },
+  "691": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/capture.rs",
+    "crates/victory-hle/src/modules/xmem.rs"
+   ]
+  },
+  "692": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/capture.rs",
+    "crates/victory-hle/src/modules/xmem.rs"
+   ]
+  },
+  "693": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    32,
+    124,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346
+   ]
+  },
+  "694": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "695": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/capture.rs",
+    "crates/victory-hle/src/modules/xmem.rs"
+   ]
+  },
+  "697": {
+   "result": "breaks the build",
+   "detail": [
+    "crates\\victory-shader\\src\\emit\\bitcode.rs:535:15: error[E0004]: non-exhaustive patterns: `&bitcode::Op::Alloca(_, _)` not covered: pattern `&bitcode::Op::Alloca(_, _)` not covered",
+    "error: could not compile `victory-shader` (lib) due to 1 previous error",
+    "error: could not compile `victory-shader` (lib test) due to 1 previous error"
+   ]
+  },
+  "699": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/capture.rs",
+    "crates/victory-hle/src/modules/xmem.rs",
+    "crates/victory-shader/src/emit/lower.rs"
+   ]
+  },
+  "702": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/watch.rs"
+   ]
+  },
+  "703": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-formats/src/bcpack.rs"
+   ],
+   "with": [
+    658
+   ]
+  },
+  "704": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-shader/src/emit/host.rs",
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    73,
+    123,
+    130,
+    142,
+    156,
+    162,
+    164,
+    168
+   ]
+  },
+  "705": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/shader.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "707": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "708": {
+   "result": "in forge"
+  },
+  "709": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/shader.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ]
+  },
+  "710": {
+   "result": "conflicts with main",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs",
+    "crates/victory-shader/src/resource.rs"
+   ]
+  },
+  "922": {
+   "result": "in forge"
+  },
+  "925": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/list.rs",
+    "crates/victory-gpu/src/pipeline.rs",
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    24,
+    32,
+    73,
+    130,
+    142,
+    156,
+    162,
+    164
+   ]
+  },
+  "926": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447
+   ]
+  },
+  "927": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/gameinput.rs"
+   ],
+   "with": [
+    150,
+    197,
+    361,
+    613
+   ]
+  },
+  "928": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/device.rs"
+   ],
+   "with": [
+    278
+   ]
+  },
+  "929": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/Cargo.toml"
+   ],
+   "with": [
+    82,
+    130,
+    150
+   ]
+  },
+  "933": {
+   "result": "in forge"
+  },
+  "934": {
+   "result": "in forge"
+  },
+  "937": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-core/src/policy.rs"
+   ],
+   "with": [
+    310
+   ]
+  },
+  "939": {
+   "result": "in forge"
+  },
+  "941": {
+   "result": "in forge"
+  },
+  "943": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "946": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/bitcode.rs",
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "947": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/structure.rs"
+   ],
+   "with": [
+    126,
+    288,
+    617,
+    660
+   ]
+  },
+  "948": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    123,
+    130,
+    202,
+    208,
+    279,
+    322
+   ]
+  },
+  "949": {
+   "result": "in forge"
+  },
+  "952": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "953": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "955": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-shader/src/emit/host.rs"
+   ],
+   "with": [
+    123,
+    130,
+    164,
+    244,
+    331,
+    493,
+    575,
+    949
+   ]
+  },
+  "956": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/indirect.rs"
+   ],
+   "with": [
+    32,
+    178,
+    346,
+    427,
+    450,
+    493,
+    550,
+    591
+   ]
+  },
+  "957": {
+   "result": "in forge"
+  },
+  "958": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/device.rs"
+   ],
+   "with": [
+    278
+   ]
+  },
+  "959": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "Cargo.lock",
+    "apps/victory/Cargo.toml"
+   ],
+   "with": [
+    130,
+    273,
+    310,
+    517,
+    684
+   ]
+  },
+  "960": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md",
+    "apps/victory/Cargo.toml"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280,
+    299
+   ]
+  },
+  "961": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/main.rs",
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/pipeline.rs",
+    "crates/victory-gpu/src/shader_cache.rs"
+   ],
+   "with": [
+    32,
+    73,
+    130,
+    142,
+    156,
+    162,
+    164,
+    168
+   ]
+  },
+  "963": {
+   "result": "in forge"
+  },
+  "967": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "968": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/build.rs"
+   ],
+   "with": [
+    151
+   ]
+  },
+  "969": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/pipeline/host.rs",
+    "crates/victory-shader/src/emit/host.rs"
+   ],
+   "with": [
+    12,
+    32,
+    112,
+    130,
+    150,
+    164,
+    178,
+    202
+   ]
+  },
+  "970": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    123,
+    130,
+    217,
+    331,
+    450
+   ]
+  },
+  "972": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xsystem.rs"
+   ],
+   "with": [
+    449,
+    939
+   ]
+  },
+  "973": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-core/src/policy.rs"
+   ],
+   "with": [
+    310
+   ]
+  },
+  "974": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs"
+   ],
+   "with": [
+    123,
+    130,
+    331,
+    493,
+    575,
+    949
+   ]
+  },
+  "975": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xg.rs"
+   ],
+   "with": [
+    263,
+    674,
+    957
+   ]
+  },
+  "976": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/device.rs"
+   ],
+   "with": [
+    278
+   ]
+  },
+  "978": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "982": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "983": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline/library.rs"
+   ],
+   "with": [
+    72,
+    347
+   ]
+  },
+  "984": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "985": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/frame.rs"
+   ],
+   "with": [
+    174,
+    319
+   ]
+  },
+  "986": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs"
+   ],
+   "with": [
+    123,
+    130,
+    331,
+    493,
+    575,
+    949
+   ]
+  },
+  "988": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    124,
+    472,
+    575
+   ]
+  },
+  "990": {
+   "result": "in forge"
+  },
+  "991": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    124,
+    472,
+    575
+   ]
+  },
+  "992": {
+   "result": "in forge"
+  },
+  "993": {
+   "result": "in forge"
+  },
+  "994": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/indirect.rs",
+    "crates/victory-gpu/src/pipeline/host.rs",
+    "crates/victory-gpu/src/queue.rs"
+   ],
+   "with": [
+    32,
+    119,
+    130,
+    178,
+    202,
+    208,
+    217,
+    279
+   ]
+  },
+  "995": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "996": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "997": {
+   "result": "in forge"
+  },
+  "999": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/structure.rs"
+   ],
+   "with": [
+    73,
+    126,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176
+   ]
+  },
+  "1000": {
+   "result": "in forge"
+  },
+  "1002": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/structure.rs"
+   ],
+   "with": [
+    73,
+    126,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176
+   ]
+  },
+  "1004": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1005": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs",
+    "crates/victory-formats/src/texture.rs"
+   ],
+   "with": [
+    112,
+    263,
+    351,
+    378,
+    517,
+    603,
+    673,
+    993
+   ]
+  },
+  "1006": {
+   "result": "in forge"
+  },
+  "1007": {
+   "result": "draft"
+  },
+  "1008": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1009": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xmem.rs"
+   ],
+   "with": [
+    76,
+    130,
+    538
+   ]
+  },
+  "1010": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1011": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280,
+    299
+   ]
+  },
+  "1012": {
+   "result": "in forge"
+  },
+  "1013": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/structure.rs"
+   ],
+   "with": [
+    126,
+    288,
+    617,
+    660
+   ]
+  },
+  "1014": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1015": {
+   "result": "in forge"
+  },
+  "1016": {
+   "result": "in forge"
+  },
+  "1017": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/run.rs",
+    "apps/victory/src/translate.rs",
+    "crates/victory-gpu/src/resource.rs",
+    "crates/victory-hle/src/modules/mod.rs",
+    "crates/victory-hle/src/modules/storage.rs"
+   ],
+   "with": [
+    12,
+    32,
+    55,
+    112,
+    130,
+    150,
+    217,
+    218
+   ]
+  },
+  "1019": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    123,
+    124,
+    130,
+    331,
+    472,
+    493,
+    575,
+    949
+   ]
+  },
+  "1020": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/pipeline/host.rs"
+   ],
+   "with": [
+    32,
+    346,
+    352,
+    427,
+    450,
+    491,
+    493,
+    550
+   ]
+  },
+  "1021": {
+   "result": "in forge"
+  },
+  "1022": {
+   "result": "in forge"
+  },
+  "1023": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/list.rs",
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    24,
+    32,
+    124,
+    130,
+    202,
+    208,
+    279,
+    322
+   ]
+  },
+  "1024": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    124,
+    472,
+    575
+   ]
+  },
+  "1025": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/files.rs"
+   ],
+   "with": [
+    130,
+    133,
+    290
+   ]
+  },
+  "1027": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xgameui.rs"
+   ],
+   "with": [
+    112,
+    370
+   ]
+  },
+  "1030": {
+   "result": "held",
+   "detail": "Adds VIctory_GTA6_Progress.zip, a binary archive the repository's asset policy refuses (cargo xtask policy)."
+  },
+  "1031": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/main.rs"
+   ],
+   "with": [
+    378,
+    506,
+    535
+   ]
+  },
+  "1032": {
+   "result": "in forge"
+  },
+  "1033": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/ir.rs"
+   ],
+   "with": [
+    105,
+    369,
+    659
+   ]
+  },
+  "1040": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/list.rs",
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    24,
+    32,
+    55,
+    112,
+    130,
+    202,
+    208,
+    217
+   ]
+  },
+  "1041": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline/host.rs",
+    "crates/victory-gpu/src/pipeline/library.rs"
+   ],
+   "with": [
+    72,
+    347,
+    352,
+    491,
+    493,
+    623,
+    1000
+   ]
+  },
+  "1042": {
+   "result": "in forge"
+  },
+  "1043": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-loader/src/prepare.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    112,
+    168,
+    284,
+    379,
+    447,
+    670,
+    990
+   ]
+  },
+  "1045": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990
+   ]
+  },
+  "1046": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990
+   ]
+  },
+  "1048": {
+   "result": "in forge"
+  },
+  "1050": {
+   "result": "in forge"
+  },
+  "1052": {
+   "result": "in forge"
+  },
+  "1053": {
+   "result": "in forge"
+  },
+  "1055": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1056": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1057": {
+   "result": "in forge"
+  },
+  "1058": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280,
+    299
+   ]
+  },
+  "1059": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-loader/src/lib.rs"
+   ],
+   "with": [
+    454,
+    560
+   ]
+  },
+  "1064": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280,
+    299
+   ]
+  },
+  "1065": {
+   "result": "in forge"
+  },
+  "1066": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/indirect.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs",
+    "crates/victory-shader/src/emit/wave.rs"
+   ],
+   "with": [
+    32,
+    98,
+    130,
+    168,
+    178,
+    202,
+    208,
+    279
+   ]
+  },
+  "1067": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1073": {
+   "result": "draft"
+  },
+  "1074": {
+   "result": "draft"
+  },
+  "1076": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/capture.rs",
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    32,
+    55,
+    73,
+    112,
+    119,
+    123,
+    124,
+    126
+   ]
+  },
+  "1077": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-shader/src/native.rs"
+   ],
+   "with": [
+    32,
+    123,
+    130,
+    331,
+    333,
+    346,
+    427,
+    450
+   ]
+  },
+  "1080": {
+   "result": "in forge"
+  },
+  "1081": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    32,
+    123,
+    130,
+    331,
+    346,
+    427,
+    450,
+    493
+   ]
+  },
+  "1082": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1083": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1084": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1088": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1090": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1091": {
+   "result": "in forge"
+  },
+  "1092": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/indirect.rs",
+    "crates/victory-gpu/src/resource.rs",
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    130,
+    142,
+    164,
+    178,
+    217
+   ]
+  },
+  "1093": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    130,
+    217,
+    331,
+    450,
+    933
+   ]
+  },
+  "1094": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shader_cache.rs"
+   ],
+   "with": [
+    130,
+    358
+   ]
+  },
+  "1095": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1097": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-formats/src/texture.rs"
+   ],
+   "with": [
+    263,
+    351,
+    603,
+    993
+   ]
+  },
+  "1098": {
+   "result": "in forge"
+  },
+  "1100": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/object.rs"
+   ],
+   "with": [
+    32,
+    153,
+    270
+   ]
+  },
+  "1101": {
+   "result": "conflicts with pull requests",
+   "files": [
+    ".github/workflows/ci.yml",
+    "crates/victory-core/src/config.rs",
+    "crates/victory-gpu/src/capture.rs",
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    24,
+    32,
+    73,
+    112,
+    114,
+    122,
+    123,
+    126
+   ]
+  },
+  "1104": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md",
+    "crates/victory-hle/src/modules/gameinput.rs"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    197,
+    279,
+    280
+   ]
+  },
+  "1105": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/object.rs"
+   ],
+   "with": [
+    32,
+    153,
+    270
+   ]
+  },
+  "1106": {
+   "result": "in forge"
+  },
+  "1108": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    142,
+    164,
+    265,
+    660,
+    1042
+   ]
+  },
+  "1109": {
+   "result": "in forge"
+  },
+  "1110": {
+   "result": "in forge"
+  },
+  "1111": {
+   "result": "in forge"
+  },
+  "1112": {
+   "result": "in forge"
+  },
+  "1113": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-formats/src/texture.rs",
+    "crates/victory-hle/src/modules/xg.rs"
+   ],
+   "with": [
+    263,
+    351,
+    603,
+    674,
+    957,
+    993
+   ]
+  },
+  "1114": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "Cargo.lock",
+    "README.md",
+    "apps/victory/src/main.rs",
+    "apps/victory/src/translate.rs"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    273,
+    279,
+    280
+   ]
+  },
+  "1122": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xmem.rs"
+   ],
+   "with": [
+    76,
+    130,
+    538
+   ]
+  },
+  "1123": {
+   "result": "in forge"
+  },
+  "1124": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    124,
+    472,
+    575
+   ]
+  },
+  "1125": {
+   "result": "in forge"
+  },
+  "1126": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    32,
+    346,
+    427,
+    450,
+    493,
+    550,
+    591
+   ]
+  },
+  "1127": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/host.rs",
+    "crates/victory-shader/src/emit/shader.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    164,
+    168,
+    244,
+    284,
+    379,
+    447,
+    990,
+    1015
+   ]
+  },
+  "1129": {
+   "result": "in forge"
+  },
+  "1130": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1133": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/shader.rs"
+   ],
+   "with": [
+    32,
+    73,
+    123,
+    130,
+    142,
+    156,
+    162,
+    164
+   ]
+  },
+  "1135": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/texture.rs"
+   ],
+   "with": [
+    130,
+    143,
+    472,
+    601
+   ]
+  },
+  "1136": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1137": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/apu.rs"
+   ],
+   "with": [
+    130,
+    218
+   ]
+  },
+  "1138": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1142": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1143": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1144": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/diff_tests.rs"
+   ],
+   "with": [
+    244,
+    684
+   ]
+  },
+  "1145": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/shader.rs"
+   ],
+   "with": [
+    164,
+    1015,
+    1065
+   ]
+  },
+  "1146": {
+   "result": "in forge"
+  },
+  "1148": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1149": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1152": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline/host.rs"
+   ],
+   "with": [
+    352,
+    491,
+    493,
+    623
+   ]
+  },
+  "1155": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/display.rs"
+   ],
+   "with": [
+    299,
+    531,
+    1125
+   ]
+  },
+  "1156": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-loader/src/crash.rs"
+   ],
+   "with": [
+    12,
+    213,
+    214,
+    941
+   ]
+  },
+  "1157": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/gameinput.rs"
+   ],
+   "with": [
+    150,
+    197,
+    361,
+    613
+   ]
+  },
+  "1158": {
+   "result": "in forge"
+  },
+  "1159": {
+   "result": "in forge"
+  },
+  "1160": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/indirect.rs"
+   ],
+   "with": [
+    32,
+    178,
+    346,
+    427,
+    450,
+    493,
+    550,
+    591
+   ]
+  },
+  "1161": {
+   "result": "in forge"
+  },
+  "1162": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346
+   ]
+  },
+  "1163": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-core/src/policy.rs"
+   ],
+   "with": [
+    310
+   ]
+  },
+  "1164": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1165": {
+   "result": "breaks the build",
+   "detail": [
+    "crates\\victory-gpu\\src\\list.rs:1884:13: error[E0308]: mismatched types: expected `&HostList`, found `Arc<HostList>`",
+    "crates\\victory-gpu\\src\\list.rs:1891:22: error[E0308]: mismatched types: expected `&HostList`, found `Arc<HostList>`",
+    "crates\\victory-gpu\\src\\list.rs:1916:22: error[E0308]: mismatched types: expected `&HostList`, found `Arc<HostList>`"
+   ]
+  },
+  "1166": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    32,
+    346,
+    427,
+    450,
+    493,
+    550,
+    591
+   ]
+  },
+  "1167": {
+   "result": "in forge"
+  },
+  "1168": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    450,
+    1165
+   ]
+  },
+  "1169": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/speech.rs"
+   ],
+   "with": [
+    82
+   ]
+  },
+  "1170": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/resource.rs"
+   ],
+   "with": [
+    139,
+    368
+   ]
+  },
+  "1171": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-pe/src/implib.rs"
+   ],
+   "with": [
+    963
+   ]
+  },
+  "1173": {
+   "result": "in forge"
+  },
+  "1174": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xgame.rs"
+   ],
+   "with": [
+    112,
+    455
+   ]
+  },
+  "1175": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-shader/src/native.rs"
+   ],
+   "with": [
+    32,
+    123,
+    130,
+    331,
+    333,
+    346,
+    427,
+    450
+   ]
+  },
+  "1176": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs",
+    "crates/victory-shader/src/native.rs"
+   ],
+   "with": [
+    142,
+    164,
+    265,
+    333,
+    660,
+    1042,
+    1112
+   ]
+  },
+  "1177": {
+   "result": "in forge"
+  },
+  "1178": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/dstorage.rs"
+   ],
+   "with": [
+    130,
+    430,
+    472
+   ]
+  },
+  "1179": {
+   "result": "draft"
+  },
+  "1180": {
+   "result": "in forge"
+  },
+  "1181": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/dstorage.rs"
+   ],
+   "with": [
+    130,
+    430,
+    472
+   ]
+  },
+  "1182": {
+   "result": "in forge"
+  },
+  "1183": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs"
+   ],
+   "with": [
+    112,
+    378,
+    517,
+    673
+   ]
+  },
+  "1185": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/shader.rs",
+    "apps/victory/src/translate.rs",
+    "crates/victory-game/src/sgd5.rs"
+   ],
+   "with": [
+    112,
+    273,
+    353,
+    378,
+    517,
+    673
+   ]
+  },
+  "1186": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    124,
+    472,
+    575
+   ]
+  },
+  "1187": {
+   "result": "in forge"
+  },
+  "1188": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/copystat.rs"
+   ],
+   "with": [
+    484
+   ]
+  },
+  "1189": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/fence.rs",
+    "crates/victory-gpu/src/sampler.rs"
+   ],
+   "with": [
+    32,
+    474
+   ]
+  },
+  "1190": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1191": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/texture.rs"
+   ],
+   "with": [
+    130,
+    143,
+    472,
+    601
+   ]
+  },
+  "1192": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-loader/src/stacks.rs",
+    "crates/victory-loader/src/tls.rs"
+   ],
+   "with": [
+    188,
+    221
+   ]
+  },
+  "1193": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/storage.rs"
+   ],
+   "with": [
+    112
+   ]
+  },
+  "1194": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xstore.rs"
+   ],
+   "with": [
+    335,
+    475
+   ]
+  },
+  "1195": {
+   "result": "in forge"
+  },
+  "1196": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/runtime.rs"
+   ],
+   "with": [
+    337,
+    359
+   ]
+  },
+  "1197": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1198": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/pipeline/make.rs",
+    "crates/victory-shader/src/emit/host.rs",
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    32,
+    73,
+    123,
+    126,
+    130,
+    142,
+    156,
+    162
+   ]
+  },
+  "1199": {
+   "result": "in forge"
+  },
+  "1200": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shader_cache.rs"
+   ],
+   "with": [
+    130,
+    358
+   ]
+  },
+  "1201": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-loader/src/windows.rs"
+   ],
+   "with": [
+    454,
+    560,
+    1111
+   ]
+  },
+  "1202": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/container.rs",
+    "crates/victory-shader/src/emit/validator.rs"
+   ],
+   "with": [
+    477,
+    684,
+    1022,
+    1042,
+    1065
+   ]
+  },
+  "1203": {
+   "result": "in forge"
+  },
+  "1204": {
+   "result": "in forge"
+  },
+  "1205": {
+   "result": "in forge"
+  },
+  "1206": {
+   "result": "in forge"
+  },
+  "1207": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline/host.rs"
+   ],
+   "with": [
+    352,
+    491,
+    493,
+    623
+   ]
+  },
+  "1208": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/container.rs",
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    142,
+    164,
+    265,
+    660,
+    1022,
+    1042,
+    1065,
+    1112
+   ]
+  },
+  "1209": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/gfx10/fields.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1210": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/texture.rs"
+   ],
+   "with": [
+    130,
+    143,
+    472,
+    601
+   ]
+  },
+  "1211": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1212": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/apu.rs"
+   ],
+   "with": [
+    130,
+    218
+   ]
+  },
+  "1213": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/net.rs"
+   ],
+   "with": [
+    217,
+    997
+   ]
+  },
+  "1214": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/apu.rs"
+   ],
+   "with": [
+    130,
+    218
+   ]
+  },
+  "1215": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1217": {
+   "result": "in forge"
+  },
+  "1218": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-loader/tests/load_probe.rs",
+    "xtask/src/main.rs"
+   ],
+   "with": [
+    112,
+    232
+   ]
+  },
+  "1220": {
+   "result": "in forge"
+  },
+  "1221": {
+   "result": "in forge"
+  },
+  "1223": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1224": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xmem.rs"
+   ],
+   "with": [
+    76,
+    130,
+    538
+   ]
+  },
+  "1225": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/resource.rs"
+   ],
+   "with": [
+    139,
+    368,
+    1182
+   ]
+  },
+  "1227": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/copystat.rs",
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/structure.rs"
+   ],
+   "with": [
+    32,
+    73,
+    123,
+    126,
+    130,
+    142,
+    156,
+    162
+   ]
+  },
+  "1228": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    450
+   ]
+  },
+  "1229": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/waterfall_tests.rs",
+    "crates/victory-shader/src/resource.rs"
+   ],
+   "with": [
+    139,
+    368,
+    1106,
+    1182
+   ]
+  },
+  "1230": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1231": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/resource.rs"
+   ],
+   "with": [
+    139,
+    368,
+    1182
+   ]
+  },
+  "1233": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    32,
+    346,
+    427,
+    450,
+    493,
+    550,
+    591
+   ]
+  },
+  "1236": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs"
+   ],
+   "with": [
+    123,
+    130,
+    331,
+    493,
+    575,
+    949,
+    1032
+   ]
+  },
+  "1237": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1238": {
+   "result": "in forge"
+  },
+  "1241": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-pe/src/image.rs"
+   ],
+   "with": [
+    112,
+    219,
+    529
+   ]
+  },
+  "1243": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/d3d12x.rs",
+    "crates/victory-hle/src/modules/xgame.rs",
+    "crates/victory-hle/src/modules/xgameui.rs",
+    "crates/victory-pe/src/image.rs"
+   ],
+   "with": [
+    112,
+    219,
+    370,
+    455,
+    529
+   ]
+  },
+  "1244": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs"
+   ],
+   "with": [
+    112,
+    378,
+    517,
+    673
+   ]
+  },
+  "1245": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1246": {
+   "result": "in forge"
+  },
+  "1248": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xnetworking.rs"
+   ],
+   "with": [
+    1167
+   ]
+  },
+  "1251": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/queue.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1252": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "docs/architecture.md"
+   ],
+   "with": [
+    130,
+    1161
+   ]
+  },
+  "1253": {
+   "result": "in forge"
+  },
+  "1254": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md",
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    12,
+    32,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280
+   ]
+  },
+  "1255": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1256": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/host.rs",
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1257": {
+   "result": "draft"
+  },
+  "1258": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-formats/src/xma.rs"
+   ],
+   "with": [
+    96,
+    172,
+    183,
+    364,
+    992,
+    1016
+   ]
+  },
+  "1259": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1260": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    123,
+    130,
+    202,
+    208,
+    279,
+    322,
+    331
+   ]
+  },
+  "1261": {
+   "result": "in forge"
+  },
+  "1262": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1263": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280,
+    299
+   ]
+  },
+  "1264": {
+   "result": "in forge"
+  },
+  "1265": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    450
+   ]
+  },
+  "1266": {
+   "result": "in forge"
+  },
+  "1267": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    124,
+    472,
+    575
+   ]
+  },
+  "1268": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/queue.rs"
+   ],
+   "with": [
+    32
+   ]
+  },
+  "1269": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1270": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs",
+    "crates/victory-shader/src/structure.rs"
+   ],
+   "with": [
+    73,
+    126,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176
+   ]
+  },
+  "1271": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/shader.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1272": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/list.rs",
+    "crates/victory-gpu/src/resource.rs",
+    "crates/victory-gpu/src/texture.rs"
+   ],
+   "with": [
+    24,
+    32,
+    55,
+    112,
+    123,
+    130,
+    143,
+    202
+   ]
+  },
+  "1273": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    32,
+    123,
+    130,
+    331,
+    346,
+    427,
+    450,
+    493
+   ]
+  },
+  "1274": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xpackage.rs"
+   ],
+   "with": [
+    412
+   ]
+  },
+  "1275": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1276": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs",
+    "crates/victory-shader/src/resource.rs"
+   ],
+   "with": [
+    139,
+    142,
+    164,
+    265,
+    368,
+    660,
+    1042,
+    1112
+   ]
+  },
+  "1277": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/watch.rs",
+    "crates/victory-hle/src/modules/xmem.rs"
+   ],
+   "with": [
+    76,
+    119,
+    130,
+    393,
+    515,
+    538,
+    934,
+    1264
+   ]
+  },
+  "1278": {
+   "result": "in forge"
+  },
+  "1279": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/indirect.rs"
+   ],
+   "with": [
+    178,
+    346
+   ]
+  },
+  "1280": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1281": {
+   "result": "in forge"
+  },
+  "1282": {
+   "result": "in forge"
+  },
+  "1283": {
+   "result": "in forge"
+  },
+  "1284": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md",
+    "apps/victory/Cargo.toml",
+    "apps/victory/src/run.rs",
+    "crates/victory-gpu/src/list.rs",
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    12,
+    24,
+    32,
+    55,
+    112,
+    130,
+    150,
+    178
+   ]
+  },
+  "1285": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1287": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/Cargo.toml",
+    "apps/victory/src/run.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/indirect.rs",
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    12,
+    24,
+    32,
+    55,
+    112,
+    114,
+    122,
+    130
+   ]
+  },
+  "1288": {
+   "result": "in forge"
+  },
+  "1289": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1290": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs",
+    "crates/victory-shader/src/emit/waterfall_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1291": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    142,
+    164,
+    265,
+    660,
+    1042,
+    1112,
+    1266
+   ]
+  },
+  "1292": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1293": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/io.rs"
+   ],
+   "with": [
+    456,
+    659
+   ]
+  },
+  "1295": {
+   "result": "in forge"
+  },
+  "1296": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/resource.rs",
+    "crates/victory-gpu/src/texture.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    123,
+    130,
+    143,
+    202,
+    208
+   ]
+  },
+  "1298": {
+   "result": "in forge"
+  },
+  "1299": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280,
+    299
+   ]
+  },
+  "1300": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1301": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/gfx10/fields.rs",
+    "crates/victory-shader/src/gfx10/opcodes.rs"
+   ],
+   "with": [
+    73,
+    164,
+    265,
+    284,
+    1021
+   ]
+  },
+  "1303": {
+   "result": "in forge"
+  },
+  "1304": {
+   "result": "in forge"
+  },
+  "1306": {
+   "result": "in forge"
+  },
+  "1307": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/dxgi.rs"
+   ],
+   "with": [
+    553
+   ]
+  },
+  "1308": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xpackage.rs"
+   ],
+   "with": [
+    412
+   ]
+  },
+  "1309": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/audio/capture.rs"
+   ],
+   "with": [
+    478
+   ]
+  },
+  "1310": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/Cargo.toml",
+    "apps/victory/src/run.rs",
+    "apps/victory/src/translate.rs",
+    "crates/victory-gpu/src/descriptor.rs",
+    "crates/victory-gpu/src/fence.rs"
+   ],
+   "with": [
+    12,
+    24,
+    32,
+    55,
+    73,
+    76,
+    82,
+    112
+   ]
+  },
+  "1312": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs",
+    "crates/victory-shader/src/ir.rs",
+    "crates/victory-shader/src/structure.rs"
+   ],
+   "with": [
+    73,
+    105,
+    126,
+    142,
+    156,
+    162,
+    164,
+    168
+   ]
+  },
+  "1313": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/waterfall_tests.rs"
+   ],
+   "with": [
+    1106,
+    1182,
+    1253
+   ]
+  },
+  "1314": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1315": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs",
+    "crates/victory-shader/src/emit/shader.rs",
+    "crates/victory-shader/src/native.rs",
+    "crates/victory-shader/src/resource.rs"
+   ],
+   "with": [
+    139,
+    142,
+    164,
+    265,
+    333,
+    368,
+    660,
+    1015
+   ]
+  },
+  "1319": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs",
+    "crates/victory-shader/src/structure.rs"
+   ],
+   "with": [
+    73,
+    126,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176
+   ]
+  },
+  "1320": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md",
+    "crates/victory-gpu/src/pipeline.rs",
+    "crates/victory-gpu/src/pipeline/make.rs"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280,
+    299
+   ]
+  },
+  "1322": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    124,
+    472,
+    575
+   ]
+  },
+  "1324": {
+   "result": "breaks the build",
+   "detail": [
+    "crates\\victory-pipeline\\src\\cache.rs:198:33: error[E0277]: the trait bound `std::result::Result<(PathBuf, File), std::io::Error>: AsRef<std::path::Path>` is not satisfied: the trait `AsRef<std::path::Path>` is not implemented for `std::result::Result<(PathBuf, File), std::io::Error>`",
+    "crates\\victory-pipeline\\src\\cache.rs:200:38: error[E0277]: the trait bound `std::result::Result<(PathBuf, File), std::io::Error>: AsRef<std::path::Path>` is not satisfied: the trait `AsRef<std::path::Path>` is not implemented for `std::result::Result<(PathBuf, File), std::io::Error>`",
+    "crates\\victory-pipeline\\src\\cache.rs:203:38: error[E0277]: the trait bound `std::result::Result<(PathBuf, File), std::io::Error>: AsRef<std::path::Path>` is not satisfied: the trait `AsRef<std::path::Path>` is not implemented for `std::result::Result<(PathBuf, File), std::io::Error>`"
+   ]
+  },
+  "1326": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1327": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1328": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    142,
+    164,
+    265,
+    660,
+    1042,
+    1112,
+    1266
+   ]
+  },
+  "1329": {
+   "result": "in forge"
+  },
+  "1330": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md",
+    "crates/victory-core/src/config.rs",
+    "crates/victory-core/src/policy.rs",
+    "crates/victory-formats/src/bcpack.rs",
+    "crates/victory-formats/src/texture.rs"
+   ],
+   "with": [
+    12,
+    24,
+    32,
+    55,
+    72,
+    73,
+    76,
+    82
+   ]
+  },
+  "1331": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    32,
+    346,
+    427,
+    450,
+    493,
+    550,
+    591,
+    1298
+   ]
+  },
+  "1332": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/watch.rs"
+   ],
+   "with": [
+    119,
+    393,
+    515,
+    934
+   ]
+  },
+  "1333": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline/host.rs",
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs",
+    "crates/victory-shader/src/resource.rs"
+   ],
+   "with": [
+    73,
+    139,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176
+   ]
+  },
+  "1335": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    142,
+    164,
+    265,
+    660,
+    1042,
+    1112,
+    1266
+   ]
+  },
+  "1336": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/wave.rs",
+    "crates/victory-shader/src/resource.rs",
+    "crates/victory-shader/src/structure.rs"
+   ],
+   "with": [
+    73,
+    98,
+    126,
+    139,
+    142,
+    156,
+    162,
+    164
+   ]
+  },
+  "1337": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/sampler.rs"
+   ],
+   "with": [
+    1195
+   ]
+  },
+  "1338": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1339": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1340": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1341": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1342": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1344": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    32,
+    346,
+    427,
+    450,
+    493,
+    550,
+    591,
+    1298
+   ]
+  },
+  "1345": {
+   "result": "in forge"
+  },
+  "1346": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    450
+   ]
+  },
+  "1349": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    32,
+    123,
+    130,
+    331,
+    346,
+    427,
+    450,
+    493
+   ]
+  },
+  "1350": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1351": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/watch.rs"
+   ],
+   "with": [
+    32,
+    119,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346
+   ]
+  },
+  "1352": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    123,
+    130,
+    202,
+    208,
+    279,
+    322
+   ]
+  },
+  "1353": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/list.rs",
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    24,
+    32,
+    55,
+    112,
+    123,
+    130,
+    217,
+    331
+   ]
+  },
+  "1354": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/shader.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1355": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "Cargo.lock",
+    "crates/victory-game/src/sgd5.rs",
+    "crates/victory-hle/src/modules/dstorage.rs",
+    "crates/victory-shader/Cargo.toml",
+    "crates/victory-shader/src/native.rs"
+   ],
+   "with": [
+    130,
+    273,
+    310,
+    333,
+    430,
+    472,
+    517,
+    617
+   ]
+  },
+  "1356": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/pipeline.rs",
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    32,
+    124,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346
+   ]
+  },
+  "1357": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/gameinput.rs"
+   ],
+   "with": [
+    150,
+    197,
+    361,
+    613,
+    1329
+   ]
+  },
+  "1358": {
+   "result": "in forge"
+  },
+  "1359": {
+   "result": "in forge"
+  },
+  "1360": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1361": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1362": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1363": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/dstorage.rs"
+   ],
+   "with": [
+    130,
+    430,
+    472,
+    1187,
+    1238
+   ]
+  },
+  "1364": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1365": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1366": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/native.rs"
+   ],
+   "with": [
+    333
+   ]
+  },
+  "1367": {
+   "result": "in forge"
+  },
+  "1368": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xuser.rs"
+   ],
+   "with": [
+    623
+   ]
+  },
+  "1369": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/device.rs"
+   ],
+   "with": [
+    278
+   ]
+  },
+  "1370": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1371": {
+   "result": "in forge"
+  },
+  "1372": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-loader/src/crash.rs",
+    "crates/victory-loader/src/windows.rs"
+   ],
+   "with": [
+    12,
+    213,
+    214,
+    454,
+    560,
+    941,
+    1111,
+    1159
+   ]
+  },
+  "1373": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xgameui.rs"
+   ],
+   "with": [
+    112,
+    370
+   ]
+  },
+  "1374": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    450
+   ]
+  },
+  "1376": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1377": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1378": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1379": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1380": {
+   "result": "in forge"
+  },
+  "1381": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1382": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    123,
+    130,
+    202,
+    208,
+    279,
+    322
+   ]
+  },
+  "1383": {
+   "result": "in forge"
+  },
+  "1384": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1385": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1386": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/speech.rs",
+    "crates/victory-hle/src/modules/storage.rs"
+   ],
+   "with": [
+    82,
+    112
+   ]
+  },
+  "1387": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1388": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/list.rs",
+    "crates/victory-gpu/src/queue.rs"
+   ],
+   "with": [
+    24,
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346
+   ]
+  },
+  "1389": {
+   "result": "in forge"
+  },
+  "1390": {
+   "result": "in forge"
+  },
+  "1391": {
+   "result": "in forge"
+  },
+  "1392": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    32,
+    346,
+    427,
+    450,
+    493,
+    550,
+    591,
+    1298
+   ]
+  },
+  "1393": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1394": {
+   "result": "in forge"
+  },
+  "1395": {
+   "result": "in forge"
+  },
+  "1396": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    130,
+    217,
+    331,
+    450,
+    933
+   ]
+  },
+  "1397": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1398": {
+   "result": "in forge"
+  },
+  "1399": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs",
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs",
+    "crates/victory-shader/src/emit/shader.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    112,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176
+   ]
+  },
+  "1400": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1402": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/container.rs",
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs",
+    "crates/victory-shader/src/emit/shader.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    126,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176
+   ]
+  },
+  "1403": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs"
+   ],
+   "with": [
+    112,
+    378,
+    517,
+    673
+   ]
+  },
+  "1404": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/structure.rs"
+   ],
+   "with": [
+    126,
+    288,
+    617,
+    660,
+    1221
+   ]
+  },
+  "1405": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/indirect.rs",
+    "crates/victory-gpu/src/shadow.rs"
+   ],
+   "with": [
+    32,
+    123,
+    124,
+    130,
+    178,
+    202,
+    208,
+    279
+   ]
+  },
+  "1406": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs"
+   ],
+   "with": [
+    123,
+    130,
+    331,
+    493,
+    575,
+    949,
+    1032,
+    1298
+   ]
+  },
+  "1407": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs",
+    "crates/victory-shader/src/structure.rs"
+   ],
+   "with": [
+    126,
+    142,
+    164,
+    265,
+    288,
+    617,
+    660,
+    1042
+   ]
+  },
+  "1408": {
+   "result": "breaks the build",
+   "detail": [
+    "crates\\victory-shader\\src\\emit\\wave_prefix_tests.rs:185:19: error: cannot construct `host::Host` with struct literal syntax due to private fields",
+    "error: could not compile `victory-shader` (lib test) due to 1 previous error"
+   ]
+  },
+  "1409": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/shader.rs",
+    "crates/victory-shader/src/emit/waterfall_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1411": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/net.rs"
+   ],
+   "with": [
+    217,
+    997,
+    1380
+   ]
+  },
+  "1412": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs",
+    "crates/victory-shader/src/structure.rs"
+   ],
+   "with": [
+    126,
+    168,
+    284,
+    288,
+    379,
+    447,
+    617,
+    660
+   ]
+  },
+  "1414": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1415": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs"
+   ],
+   "with": [
+    112,
+    378,
+    517,
+    673
+   ]
+  },
+  "1416": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1417": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/host.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    164,
+    168,
+    244,
+    284,
+    379,
+    447,
+    990,
+    1048
+   ]
+  },
+  "1418": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/texture.rs"
+   ],
+   "with": [
+    130,
+    143,
+    472,
+    601
+   ]
+  },
+  "1419": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/kernel.rs"
+   ],
+   "with": [
+    12,
+    112,
+    186,
+    373,
+    512
+   ]
+  },
+  "1420": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs",
+    "crates/victory-shader/src/structure.rs"
+   ],
+   "with": [
+    126,
+    142,
+    164,
+    265,
+    288,
+    617,
+    660,
+    1042
+   ]
+  },
+  "1421": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/runtime.rs"
+   ],
+   "with": [
+    337,
+    359
+   ]
+  },
+  "1422": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    130,
+    217,
+    331,
+    450,
+    933
+   ]
+  },
+  "1423": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1424": {
+   "result": "in forge"
+  },
+  "1425": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs",
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    112,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176
+   ]
+  },
+  "1426": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    123,
+    130,
+    202,
+    208,
+    217
+   ]
+  },
+  "1427": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs"
+   ],
+   "with": [
+    123,
+    130,
+    331,
+    493,
+    575,
+    949,
+    1032,
+    1298
+   ]
+  },
+  "1428": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    450
+   ]
+  },
+  "1429": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline/library.rs"
+   ],
+   "with": [
+    72,
+    347,
+    1000
+   ]
+  },
+  "1430": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/gameinput.rs"
+   ],
+   "with": [
+    150,
+    197,
+    361,
+    613,
+    1329,
+    1389
+   ]
+  },
+  "1431": {
+   "result": "in forge"
+  },
+  "1432": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/kernel.rs"
+   ],
+   "with": [
+    12,
+    112,
+    186,
+    373,
+    512
+   ]
+  },
+  "1433": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/main.rs",
+    "apps/victory/src/translate.rs",
+    "crates/victory-gpu/src/shader_cache.rs",
+    "crates/victory-shader/src/emit/host.rs",
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    98,
+    112,
+    126,
+    130,
+    142,
+    156,
+    162
+   ]
+  },
+  "1434": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-loader/src/windows.rs"
+   ],
+   "with": [
+    454,
+    560,
+    1111,
+    1304
+   ]
+  },
+  "1435": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xasync.rs"
+   ],
+   "with": [
+    114,
+    122,
+    247,
+    1098
+   ]
+  },
+  "1436": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-game/src/sgd5.rs"
+   ],
+   "with": [
+    273
+   ]
+  },
+  "1437": {
+   "result": "in forge"
+  },
+  "1438": {
+   "result": "in forge"
+  },
+  "1439": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/indirect.rs",
+    "crates/victory-gpu/src/list.rs",
+    "crates/victory-gpu/src/pipeline/host.rs"
+   ],
+   "with": [
+    24,
+    32,
+    178,
+    346,
+    352,
+    427,
+    450,
+    491
+   ]
+  },
+  "1441": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/waterfall_tests.rs"
+   ],
+   "with": [
+    1106,
+    1182,
+    1253,
+    1437
+   ]
+  },
+  "1443": {
+   "result": "in forge"
+  },
+  "1444": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    32,
+    346,
+    427,
+    450,
+    493,
+    550,
+    591,
+    1298
+   ]
+  },
+  "1445": {
+   "result": "in forge"
+  },
+  "1446": {
+   "result": "in forge"
+  },
+  "1447": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/files.rs",
+    "crates/victory-hle/src/modules/xpackage.rs"
+   ],
+   "with": [
+    130,
+    133,
+    290,
+    412,
+    1367,
+    1383,
+    1438
+   ]
+  },
+  "1448": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    32,
+    346,
+    427,
+    450,
+    493,
+    550,
+    591,
+    1298
+   ]
+  },
+  "1449": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs"
+   ],
+   "with": [
+    123,
+    130,
+    331,
+    493,
+    575,
+    949,
+    1032,
+    1298
+   ]
+  },
+  "1450": {
+   "result": "in forge"
+  },
+  "1451": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs",
+    "crates/victory-shader/src/emit/shader.rs",
+    "crates/victory-shader/src/io.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1452": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-formats/src/texture.rs"
+   ],
+   "with": [
+    263,
+    351,
+    603,
+    993,
+    1450
+   ]
+  },
+  "1453": {
+   "result": "breaks the build",
+   "detail": [
+    "crates\\victory-gpu\\src\\primitive.rs:100:15: error[E0004]: non-exhaustive patterns: `primitive::Kind::Snorm8` and `primitive::Kind::Snorm16` not covered: patterns `primitive::Kind::Snorm8` and `primitive::Kind::Snorm16` not covered",
+    "error: could not compile `victory-gpu` (lib) due to 1 previous error",
+    "error: could not compile `victory-gpu` (lib test) due to 1 previous error"
+   ]
+  },
+  "1454": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280,
+    299
+   ]
+  },
+  "1455": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280,
+    299
+   ]
+  },
+  "1456": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-core/src/policy.rs",
+    "crates/victory-loader/src/prepare.rs"
+   ],
+   "with": [
+    112,
+    310,
+    670
+   ]
+  },
+  "1457": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/dstorage.rs"
+   ],
+   "with": [
+    130,
+    430,
+    472,
+    1187,
+    1238,
+    1383
+   ]
+  },
+  "1459": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs"
+   ],
+   "with": [
+    112,
+    378,
+    517,
+    673
+   ]
+  },
+  "1460": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1461": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1462": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "apps/victory/src/translate.rs",
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    112,
+    142,
+    164,
+    265,
+    378,
+    517,
+    660,
+    673
+   ]
+  },
+  "1463": {
+   "result": "in forge"
+  },
+  "1466": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1467": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/mod.rs",
+    "crates/victory-shader/src/emit/shader.rs"
+   ],
+   "with": [
+    142,
+    164,
+    265,
+    660,
+    1015,
+    1042,
+    1065,
+    1112
+   ]
+  },
+  "1469": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1471": {
+   "result": "in forge"
+  },
+  "1472": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1473": {
+   "result": "in forge"
+  },
+  "1474": {
+   "result": "in forge"
+  },
+  "1475": {
+   "result": "in forge"
+  },
+  "1476": {
+   "result": "in forge"
+  },
+  "1477": {
+   "result": "in forge"
+  },
+  "1478": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1480": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1483": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-hle/src/modules/xasync.rs",
+    "crates/victory-shader/src/emit/host.rs",
+    "crates/victory-shader/src/emit/sampler.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    32,
+    114,
+    122,
+    130,
+    164,
+    168,
+    202,
+    208
+   ]
+  },
+  "1484": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/ir.rs"
+   ],
+   "with": [
+    105,
+    369,
+    659,
+    1282,
+    1359,
+    1371
+   ]
+  },
+  "1485": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1486": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/wave.rs"
+   ],
+   "with": [
+    98
+   ]
+  },
+  "1487": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/host.rs"
+   ],
+   "with": [
+    164,
+    244
+   ]
+  },
+  "1488": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1489": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1490": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xmem.rs"
+   ],
+   "with": [
+    76,
+    130,
+    538,
+    1264,
+    1445
+   ]
+  },
+  "1491": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/structure.rs"
+   ],
+   "with": [
+    126,
+    288,
+    617,
+    660,
+    1221
+   ]
+  },
+  "1492": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/container.rs",
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs",
+    "crates/victory-shader/src/emit/shader.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    126,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176
+   ]
+  },
+  "1493": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1494": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-formats/src/texture.rs"
+   ],
+   "with": [
+    263,
+    351,
+    603,
+    993,
+    1450
+   ]
+  },
+  "1497": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/dstorage.rs"
+   ],
+   "with": [
+    130,
+    430,
+    472,
+    1187,
+    1238,
+    1383
+   ]
+  },
+  "1500": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/texture.rs"
+   ],
+   "with": [
+    32,
+    130,
+    143,
+    202,
+    208,
+    279,
+    322,
+    346
+   ]
+  },
+  "1501": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1502": {
+   "result": "draft"
+  },
+  "1503": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1504": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/container.rs",
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs",
+    "crates/victory-shader/src/emit/shader.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    126,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176
+   ]
+  },
+  "1505": {
+   "result": "in forge"
+  },
+  "1506": {
+   "result": "in forge"
+  },
+  "1507": {
+   "result": "in forge"
+  },
+  "1510": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/indirect.rs"
+   ],
+   "with": [
+    178,
+    346,
+    1507
+   ]
+  },
+  "1511": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/dxbc.rs",
+    "crates/victory-shader/src/emit/bitcode.rs",
+    "crates/victory-shader/src/emit/container.rs",
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    73,
+    126,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176
+   ]
+  },
+  "1514": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/list.rs",
+    "crates/victory-gpu/src/queue.rs"
+   ],
+   "with": [
+    24,
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346
+   ]
+  },
+  "1515": {
+   "result": "in forge"
+  },
+  "1516": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1517": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md",
+    "crates/victory-core/src/config.rs",
+    "crates/victory-hle/Cargo.toml",
+    "crates/victory-hle/src/modules/gameinput/mod.rs",
+    "crates/victory-hle/src/modules/lifecycle.rs"
+   ],
+   "with": [
+    12,
+    82,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280
+   ]
+  },
+  "1519": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1520": {
+   "result": "draft"
+  },
+  "1521": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/speech.rs",
+    "crates/victory-hle/src/modules/storage.rs",
+    "crates/victory-hle/src/modules/xuser.rs"
+   ],
+   "with": [
+    82,
+    112,
+    623,
+    1394,
+    1506
+   ]
+  },
+  "1523": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    130,
+    217,
+    331,
+    450,
+    933
+   ]
+  },
+  "1524": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/bitcode.rs"
+   ],
+   "with": [
+    164,
+    265,
+    1471
+   ]
+  },
+  "1525": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1526": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    130,
+    217,
+    331,
+    450,
+    933
+   ]
+  },
+  "1527": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/indirect.rs"
+   ],
+   "with": [
+    32,
+    130,
+    178,
+    202,
+    208,
+    279,
+    322,
+    346
+   ]
+  },
+  "1529": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md",
+    "apps/victory/src/run.rs",
+    "crates/victory-hle/src/modules/gameinput.rs"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    197,
+    238,
+    279
+   ]
+  },
+  "1534": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1536": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1537": {
+   "result": "in forge"
+  },
+  "1538": {
+   "result": "in forge"
+  },
+  "1539": {
+   "result": "in forge"
+  },
+  "1540": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1541": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "README.md",
+    "apps/victory/src/main.rs"
+   ],
+   "with": [
+    12,
+    112,
+    130,
+    150,
+    178,
+    279,
+    280,
+    299
+   ]
+  },
+  "1542": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs",
+    "crates/victory-gpu/src/draw.rs",
+    "crates/victory-gpu/src/host.rs",
+    "crates/victory-gpu/src/indirect.rs",
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    55,
+    112,
+    123,
+    130,
+    143,
+    178
+   ]
+  },
+  "1543": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/resource.rs"
+   ],
+   "with": [
+    32,
+    55,
+    112,
+    130,
+    217,
+    331,
+    450,
+    933
+   ]
+  },
+  "1544": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/draw.rs"
+   ],
+   "with": [
+    32,
+    346,
+    427,
+    450,
+    493,
+    550,
+    591,
+    1298
+   ]
+  },
+  "1545": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1546": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/list.rs"
+   ],
+   "with": [
+    24,
+    32,
+    450,
+    1446
+   ]
+  },
+  "1547": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/texture.rs"
+   ],
+   "with": [
+    130,
+    143,
+    472,
+    601
+   ]
+  },
+  "1548": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor/host.rs"
+   ],
+   "with": [
+    123,
+    130,
+    331,
+    493,
+    575,
+    949,
+    1032,
+    1298
+   ]
+  },
+  "1549": {
+   "result": "in forge"
+  },
+  "1550": {
+   "result": "in forge"
+  },
+  "1551": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline/make.rs"
+   ],
+   "with": [
+    130,
+    1129,
+    1203,
+    1505
+   ]
+  },
+  "1554": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1555": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1556": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/host.rs"
+   ],
+   "with": [
+    32,
+    130,
+    202,
+    208,
+    279,
+    322,
+    346,
+    393
+   ]
+  },
+  "1557": {
+   "result": "in forge"
+  },
+  "1558": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/lifecycle.rs"
+   ],
+   "with": [
+    451,
+    1080
+   ]
+  },
+  "1559": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs",
+    "crates/victory-shader/src/resource.rs"
+   ],
+   "with": [
+    73,
+    139,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176
+   ]
+  },
+  "1560": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-pe/src/image.rs"
+   ],
+   "with": [
+    112,
+    219,
+    529
+   ]
+  },
+  "1562": {
+   "result": "in forge"
+  },
+  "1563": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline/host.rs",
+    "crates/victory-shader/src/emit/container.rs",
+    "crates/victory-shader/src/emit/mod.rs",
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    142,
+    164,
+    168,
+    265,
+    284,
+    352,
+    379,
+    447
+   ]
+  },
+  "1564": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/device.rs"
+   ],
+   "with": [
+    278
+   ]
+  },
+  "1565": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/device.rs"
+   ],
+   "with": [
+    278
+   ]
+  },
+  "1566": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/device.rs"
+   ],
+   "with": [
+    278
+   ]
+  },
+  "1568": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1569": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs",
+    "crates/victory-shader/src/ir.rs"
+   ],
+   "with": [
+    105,
+    168,
+    284,
+    369,
+    379,
+    447,
+    659,
+    990
+   ]
+  },
+  "1570": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/host.rs",
+    "crates/victory-shader/src/emit/lower.rs",
+    "crates/victory-shader/src/emit/mod.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1571": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/pipeline.rs"
+   ],
+   "with": [
+    130,
+    279,
+    491,
+    579,
+    591,
+    1538
+   ]
+  },
+  "1572": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/lower.rs"
+   ],
+   "with": [
+    73,
+    142,
+    156,
+    162,
+    164,
+    168,
+    176,
+    180
+   ]
+  },
+  "1574": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-gpu/src/descriptor.rs",
+    "crates/victory-gpu/src/descriptor/host.rs"
+   ],
+   "with": [
+    123,
+    130,
+    331,
+    493,
+    575,
+    949,
+    1032,
+    1298
+   ]
+  },
+  "1575": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-shader/src/emit/valu_tests.rs"
+   ],
+   "with": [
+    168,
+    284,
+    379,
+    447,
+    990,
+    1048,
+    1050,
+    1052
+   ]
+  },
+  "1576": {
+   "result": "conflicts with pull requests",
+   "files": [
+    "crates/victory-hle/src/modules/xgamesave.rs"
+   ],
+   "with": [
+    228,
+    570,
+    590,
+    1006,
+    1110,
+    1123,
+    1358
+   ]
+  }
+ }
+}

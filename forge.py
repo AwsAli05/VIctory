@@ -48,7 +48,17 @@ def cargo_check():
                        cwd=a.repo, capture_output=True, text=True, encoding="utf-8",
                        errors="replace", timeout=3600)
     errs = [l.strip() for l in r.stderr.splitlines() if ": error" in l or l.startswith("error")]
-    return r.returncode == 0, errs[:3]
+    if r.returncode:
+        return False, errs[:3]
+    # The repository's own asset policy: nothing from the game may be
+    # committed, so a pull request adding what it refuses stays out.
+    p = subprocess.run(["cargo", "run", "-q", "-p", "xtask", "--", "policy"],
+                       cwd=a.repo, capture_output=True, text=True, encoding="utf-8",
+                       errors="replace", timeout=3600)
+    if p.returncode:
+        found = [l.strip() for l in (p.stdout + p.stderr).splitlines() if l.startswith("POLICY")]
+        return False, ["asset policy: " + "; ".join(found[:3])]
+    return True, []
 
 
 held = {}

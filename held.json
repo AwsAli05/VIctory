@@ -1,5 +1,6 @@
 {
   "136": "In the title: total black screen from the first frame (observed on an RTX 4050 Laptop integration run, 2026-11-24).",
   "324": "In the title: refuses TLS arrays the loader read leniently; the title stops loading.",
-  "518": "In the title: answers two pipeline-creating device calls with S_OK and no object; the title crashes."
+  "518": "In the title: answers two pipeline-creating device calls with S_OK and no object; the title crashes.",
+  "1030": "Adds VIctory_GTA6_Progress.zip, a binary archive the repository's asset policy refuses (cargo xtask policy)."
 }
