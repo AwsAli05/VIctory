@@ -1,0 +1,69 @@
+name: Forge
+
+# Rebuilds forge/main and STATUS.md by the rules in RULES.md: every 12 hours,
+# or by hand from the Actions tab. Reads upstream only; writes only to this
+# repository's forge/main and forge-status branches.
+on:
+  schedule:
+    - cron: "0 0,12 * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+# One run at a time; a scheduled run waits for a manual one instead of racing it.
+concurrency:
+  group: forge
+  cancel-in-progress: false
+
+jobs:
+  forge:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    timeout-minutes: 345
+    env:
+      CARGO_TERM_COLOR: never
+      GH_TOKEN: ${{ github.token }}
+      # Merge commits made by the bot carry no co-author line.
+      FORGE_TRAILER: ""
+    defaults:
+      run:
+        shell: bash
+    steps:
+      # Pinned to full commit SHAs, as upstream's CI does.
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          ref: forge-status
+          path: forge-status
+      - name: Clone upstream
+        run: git clone --no-tags https://github.com/Marvisak/VIctory.git victory
+      - name: Toolchain (rust-toolchain.toml)
+        working-directory: victory
+        run: rustup toolchain install --no-self-update
+      - uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+        with:
+          workspaces: victory
+          shared-key: forge
+      - name: Git identity for the merge commits
+        run: |
+          git config --global user.name "VIctory Forge"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Forge
+        run: >
+          python -I forge-status/forge.py --repo victory --out out
+          --held forge-status/held.json --previous forge-status/status.json --tests
+      - name: Publish forge/main
+        working-directory: victory
+        run: git push --force "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}" forge/main
+      - name: Publish STATUS.md
+        working-directory: forge-status
+        run: |
+          cp ../out/STATUS.md ../out/status.json .
+          git add STATUS.md status.json
+          git commit -q -m "Forge status $(date -u +'%Y-%m-%d %H:%M UTC')" || exit 0
+          git push origin HEAD:forge-status
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with:
+          name: forge-log
+          path: out/forge.log

@@ -10,6 +10,9 @@ The Forge does that for everyone:
 - **[STATUS.md](STATUS.md)**: what happened to each open pull request.
 - **[forge.py](forge.py)**: the tool that builds both. Run it yourself; it needs only git, `gh` and cargo.
 
+It runs by itself every 12 hours on GitHub Actions ([forge.yml](.github/workflows/forge.yml)), following fixed
+rules: **[RULES.md](RULES.md)**. Nobody picks pull requests by hand; the rules decide, and anyone can check them.
+
 The Forge is not a fork of the project and does not replace review. Pull requests still go to
 [Marvisak/VIctory](https://github.com/Marvisak/VIctory); the Forge only shows how they combine.
 
@@ -32,12 +35,13 @@ with pull requests" is not a judgement; it shows who else is working in the same
 1. List the open pull requests and fetch every head.
 2. Check each one against `main` with `git merge-tree` (no checkout).
 3. Merge the ones that merge cleanly into a fresh branch from `main`, 25 at a time, and run
-   `cargo check --workspace --all-targets` after each batch. If a batch fails, its pull requests are redone one
+   `cargo check --workspace --all-targets` and `cargo xtask policy` after each batch. If a batch fails, its pull requests are redone one
    at a time and the ones that break the build are left out.
-4. Write `STATUS.md` and `status.json`.
+4. Run the workspace tests on the result, then write `STATUS.md` and `status.json`, including what changed since
+   the last run.
 
-Only `cargo check` gates a merge: the GPU tests need a GPU, and running them per pull request would take days.
-The test results of the final branch are reported at the top of `STATUS.md` when they were run.
+Only the build and the asset policy gate a merge: the GPU tests need a GPU, and running them per pull request would
+take days. The tests of the final branch are run once and reported in `STATUS.md`.
 
 ## Run it yourself
 

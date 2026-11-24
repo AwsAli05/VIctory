@@ -7,7 +7,10 @@ with which merged pull requests), or what it breaks.
 Usage (from anywhere; needs git >= 2.38, gh, cargo):
     python -I forge.py --repo <VIctory worktree> --out <status folder>
         [--upstream Marvisak/VIctory] [--remote origin] [--branch forge/main]
-        [--batch 20] [--held held.json] [--limit N]
+        [--batch 20] [--held held.json] [--limit N] [--tests] [--previous status.json]
+
+--tests runs `cargo test --workspace --no-fail-fast` on the final branch and
+reports it; --previous names the last run's status.json, to list what changed.
 
 The worktree is reset to the forge branch: use a worktree of its own.
 Nothing from any game is read or written; only the repository's code.
@@ -23,6 +26,8 @@ ap.add_argument("--branch", default="forge/main")
 ap.add_argument("--batch", type=int, default=20)
 ap.add_argument("--held", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "held.json"))
 ap.add_argument("--limit", type=int, default=0, help="only the first N pull requests (testing)")
+ap.add_argument("--tests", action="store_true", help="run the workspace tests on the final branch")
+ap.add_argument("--previous", help="the last run's status.json, to report what changed")
 a = ap.parse_args()
 os.makedirs(a.out, exist_ok=True)
 LOG = open(os.path.join(a.out, "forge.log"), "a", encoding="utf-8")
@@ -85,7 +90,7 @@ for i in range(0, len(prs), 100):
     if f.returncode:
         log("fetch error", f.stderr.strip()[-300:])
 
-COAUTHOR = os.environ.get("FORGE_TRAILER", "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>")
+TRAILER = os.environ.get("FORGE_TRAILER", "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>")
 status = {}  # number -> dict(result, detail)
 files_of = {}  # number -> files the pull request changes against the base
 
@@ -100,6 +105,17 @@ def changed(n):
     return files_of[n]
 
 
+def reason(h):
+    return h if isinstance(h, str) else h.get("reason", "")
+
+
+def held_now(h, head):
+    """A hold naming the pull request's commit (`head`, a prefix) lifts when
+    the author pushes another: the new code is tried again. One without a
+    commit stays until it is removed from held.json."""
+    return isinstance(h, str) or not h.get("head") or head.startswith(h["head"])
+
+
 todo = []
 for p in prs:
     n = p["number"]
@@ -107,8 +123,8 @@ for p in prs:
         status[n] = {"result": "not fetched"}
     elif p["isDraft"]:
         status[n] = {"result": "draft"}
-    elif n in held:
-        status[n] = {"result": "held", "detail": held[n]}
+    elif n in held and held_now(held[n], p["headRefOid"]):
+        status[n] = {"result": "held", "detail": reason(held[n])}
     else:
         mt = git("merge-tree", "--write-tree", "--name-only", "--no-messages", base, ref(n))
         if mt.returncode == 1:
@@ -126,7 +142,8 @@ pending = []
 
 
 def merge(n, title):
-    r = git("merge", "--no-ff", "-q", "-m", f"Forge: #{n} {title}", "-m", COAUTHOR, ref(n))
+    msg = ["-m", f"Forge: #{n} {title}"] + (["-m", TRAILER] if TRAILER else [])
+    r = git("merge", "--no-ff", "-q", *msg, ref(n))
     if r.returncode == 0:
         return None
     files = git("diff", "--name-only", "--diff-filter=U").stdout.split()
@@ -201,6 +218,22 @@ settle()
 git("reset", "-q", "--hard", good, check=True)
 log(f"done: {len(merged)} pull requests in {a.branch} at {good}")
 
+# Tests on the final branch.
+tests = None
+if a.tests:
+    import re
+    r = subprocess.run(["cargo", "test", "--workspace", "--no-fail-fast"], cwd=a.repo,
+                       capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=7200)
+    out = r.stdout + r.stderr
+    count = lambda w: sum(int(x) for x in re.findall(rf"(\d+) {w}", out))
+    tests = {"passed": count("passed"), "failed": count("failed"), "ignored": count("ignored"),
+             "failing": sorted(set(re.findall(r"^test (\S+) \.\.\. FAILED", out, re.M)))}
+    log(f"tests: {tests['passed']} passed, {tests['failed']} failed")
+
+previous = {}
+if a.previous and os.path.exists(a.previous):
+    previous = json.load(open(a.previous, encoding="utf-8")).get("status", {})
+
 # Status page.
 now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 by = {}
@@ -209,7 +242,7 @@ for p in prs:
     by.setdefault(s["result"], []).append((p, s))
 order = ["in forge", "conflicts with pull requests", "conflicts with main", "breaks the build",
          "held", "draft", "not fetched", "error", "?"]
-json.dump({"generated": now, "base": base, "head": good, "branch": a.branch,
+json.dump({"generated": now, "base": base, "head": good, "branch": a.branch, "tests": tests,
            "status": {p["number"]: status.get(p["number"]) for p in prs}},
           open(os.path.join(a.out, "status.json"), "w", encoding="utf-8"), indent=1)
 
@@ -220,12 +253,28 @@ def cell(s):
 
 md = [f"# VIctory Forge status", "",
       f"Generated {now}. Base: upstream `main` at `{base[:10]}`. Branch `{a.branch}` at `{good[:10]}`: "
-      f"**{len(merged)} of {len(prs)} open pull requests** merged and building (`cargo check --workspace --all-targets`).", "",
+      f"**{len(merged)} of {len(prs)} open pull requests** merged, building (`cargo check --workspace --all-targets`) "
+      f"and passing the asset policy (`cargo xtask policy`). Rules: [RULES.md](RULES.md).", "",
       "| Result | Pull requests |", "|---|---:|"]
 for k in order:
     if k in by:
         md.append(f"| {k} | {len(by[k])} |")
 md.append("")
+if tests is not None:
+    md += ["## Tests on the branch", "",
+           f"`cargo test --workspace --no-fail-fast`: **{tests['passed']} passed, {tests['failed']} failed, "
+           f"{tests['ignored']} ignored** (on the machine that ran the Forge; GPU tests skip where it has no GPU). "
+           "Test failures do not keep a pull request out; they are listed for the authors.", ""]
+    md += [f"- `{f}`" for f in tests["failing"]] + [""]
+if previous:
+    was_in = {int(k) for k, v in previous.items() if v and v.get("result") == "in forge"}
+    now_in = set(merged)
+    gone = sorted(was_in - now_in)
+    new = sorted(now_in - was_in)
+    md += ["## Since the last run", "",
+           f"Joined the branch: {', '.join(f'#{n}' for n in new) or 'none'}.", "",
+           f"Left the branch (closed, merged upstream, or now conflicting or failing): "
+           f"{', '.join(f'#{n}' for n in gone) or 'none'}.", ""]
 for k in order:
     if k not in by:
         continue
