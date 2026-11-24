@@ -13,6 +13,10 @@ The Forge does that for everyone:
 It runs by itself every 12 hours on GitHub Actions ([forge.yml](.github/workflows/forge.yml)), following fixed
 rules: **[RULES.md](RULES.md)**. Nobody picks pull requests by hand; the rules decide, and anyone can check them.
 
+**Claims:** who works on what is coordinated in [Marvisak/VIctory#1633](https://github.com/Marvisak/VIctory/issues/1633)
+(`claiming: <ID>`, `done: <ID> -> #<PR>`, `finding: <one line>`), and a bot keeps **[CLAIMS.md](CLAIMS.md)** current
+every 30 minutes. Claim before you write code, so nobody does the same work twice.
+
 The Forge is not a fork of the project and does not replace review. Pull requests still go to
 [Marvisak/VIctory](https://github.com/Marvisak/VIctory); the Forge only shows how they combine.
 

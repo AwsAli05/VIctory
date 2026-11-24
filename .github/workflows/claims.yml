@@ -1,0 +1,38 @@
+name: Claims
+
+# Reads the coordination issue upstream (read only) and publishes CLAIMS.md,
+# by the rules in RULES.md section 7. Every 30 minutes, or by hand.
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: claims
+  cancel-in-progress: false
+
+jobs:
+  claims:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          ref: forge-status
+      - name: Read claims
+        run: python3 -I claims.py
+      - name: Publish CLAIMS.md
+        run: |
+          git config user.name "VIctory Forge"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add CLAIMS.md claims.json
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Claims $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull -q --rebase origin forge-status
+          git push origin HEAD:forge-status

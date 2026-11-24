@@ -1,0 +1,59 @@
+{
+ "updated": "2026-11-24T20:09Z",
+ "tasks": [
+  {
+   "id": "GPU-BLACK-WORLD",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "GPU-HOST-MEMORY",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "GPU-PIPELINE-LIBRARY-SIZE",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "GPU-SNAPSHOT-COST",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "SHADER-GLOBAL-ATOMICS",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "SHADER-MESH-LANES-AMD",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "TEST-FRAME-WAITS",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "TEST-MED3-NAN",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "TEST-PUT-STRING",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  }
+ ]
+}

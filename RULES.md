@@ -60,12 +60,44 @@ none, so most GPU tests skip there.
 ## 6. What the Forge never does
 
 - It never pushes to, comments on, labels, approves, or closes anything in the upstream repository.
-  It only reads upstream.
+  It only reads upstream (pull requests, and the coordination issue for claims).
 - It never edits a pull request's code. Each one is merged as its author wrote it, one merge commit each.
 - It never adds anything from the game, or anything the asset policy refuses.
 - It never changes these rules by itself. Changes to the rules or holds are commits to this branch, with a reason.
 
-## 7. Changing the rules
+## 7. Claims
+
+Who works on what is coordinated in one issue upstream, the **coordination issue** (linked from
+[CLAIMS.md](CLAIMS.md)), so that two people (or two agents) do not write the same thing twice. A bot reads it every
+30 minutes and publishes [CLAIMS.md](CLAIMS.md). It only reads the issue; it never posts there.
+
+Commands, each on its own line in a comment:
+
+| Command | Meaning |
+|---|---|
+| `claiming: <ID>` | You take the task. Several IDs: `claiming: A-1, B-2`. Words after an ID explain it. |
+| `claiming: <one line>` | You take something not listed yet; it gets a `NEW-n` ID. |
+| `done: <ID> -> #<PR>` | Your pull request for the task is open. Putting the ID in the pull request's title or body counts the same. |
+| `release: <ID>` | You give the task back; the next person who claimed it gets it. |
+| `finding: <one line>` | Something needs doing that you will not do yourself: say where, why, and what it needs (game files, a GPU). It becomes a `FIND-n` task. |
+
+Tasks come from the table in the coordination issue's body (kept by its author and the maintainers), from
+`finding:` comments, and from [work.json](work.json).
+
+The rules:
+
+1. **Claim before you write code.** Read CLAIMS.md and the open pull requests first. If someone has the task,
+   pick another, or review theirs.
+2. **The first valid claim wins.** Later claims on the same task wait in line and get it if it is released or expires.
+3. **A claim expires after 14 days without a pull request.** Comment `claiming: <ID>` again to renew it.
+4. **An edited comment does not count.** Claims are first come, first served, so a claim cannot be changed
+   afterwards: post a new comment instead.
+5. **Only the holder** can mark a task done or release it.
+6. A pull request closed without merging frees its task again. A merged one closes it.
+7. Claims coordinate work; they do not decide merges. Two pull requests can still overlap. The Forge status page
+   shows it, and the one that lands upstream first stands.
+
+## 8. Changing the rules
 
 Open an issue or a pull request against the `forge-status` branch of this repository. Anyone can propose a change.
 The change takes effect at the next run.
