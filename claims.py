@@ -115,6 +115,9 @@ for c in comments:
                     done[tid] = int(pm.group(1))
         elif cmd == "release":
             for tid in ids:
+                # Out of the queue too, when waiting behind another holder.
+                if tid in waiting:
+                    waiting[tid] = [w for w in waiting[tid] if w["user"] != user]
                 h = claims.get(tid)
                 if h and h["user"] == user:
                     del claims[tid]
