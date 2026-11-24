@@ -2661,7 +2661,13 @@ impl Host {
     /// captures are on). `None` if nothing was shown; else, in diagnostics
     /// builds, whether the frame was black.
     pub(crate) fn present(&self, planes: &[(&ID3D12Resource, u32)], frame: u64) -> Option<bool> {
-        self.present_with_compositor(planes, frame, Compositor::new)
+        self.present_with_compositor(
+            planes,
+            frame,
+            Compositor::new,
+            #[cfg(all(test, feature = "diagnostics"))]
+            |_, _| {},
+        )
     }
 
     fn present_with_compositor(
@@ -2669,6 +2675,10 @@ impl Host {
         planes: &[(&ID3D12Resource, u32)],
         frame: u64,
         create_compositor: impl FnOnce(&ID3D12Device, DXGI_FORMAT) -> windows::core::Result<Compositor>,
+        #[cfg(all(test, feature = "diagnostics"))] inspect: impl FnOnce(
+            &ID3D12Resource,
+            &D3D12_PLACED_SUBRESOURCE_FOOTPRINT,
+        ),
     ) -> Option<bool> {
         let &(primary, _) = planes.first()?;
         // SAFETY: live resources.
@@ -2757,7 +2767,7 @@ impl Host {
                 list.ResourceBarrier(&before);
                 list.CopyResource(&back, texture);
                 #[cfg(feature = "diagnostics")]
-                let capture = crate::capture::wanted(frame)
+                let capture = (cfg!(test) || crate::capture::wanted(frame))
                     .then(|| crate::capture::read_back(&self.device, list, texture))
                     .flatten();
                 #[cfg(feature = "diagnostics")]
@@ -2872,7 +2882,7 @@ impl Host {
                         D3D12_RESOURCE_STATE_RENDER_TARGET,
                         D3D12_RESOURCE_STATE_COPY_SOURCE,
                     )]);
-                    let capture = crate::capture::wanted(frame)
+                    let capture = (cfg!(test) || crate::capture::wanted(frame))
                         .then(|| crate::capture::read_back(&self.device, list, &back))
                         .flatten();
                     let probe = crate::capture::probe(&self.device, list, &back);
@@ -2913,6 +2923,10 @@ impl Host {
             self.execute(&[&p.copy]);
             #[cfg(feature = "diagnostics")]
             if let Some((buffer, footprint)) = capture {
+                // Tests inspect the completed copy before flip-discard Present
+                // can invalidate the back buffer, with the presenter still locked.
+                #[cfg(test)]
+                inspect(&buffer, &footprint);
                 crate::capture::save_read_back(frame, &buffer, &footprint);
             }
             let _ = p.swap_chain.Present(0, DXGI_PRESENT(0));
@@ -3459,12 +3473,17 @@ mod present_plane_tests {
         );
         let mut attempted = false;
         assert!(
-            host.present_with_compositor(&[(&scene, state), (&overlay, state)], 2, |_, _| {
-                attempted = true;
-                Err(windows::core::Error::from_hresult(
-                    windows::Win32::Foundation::E_FAIL,
-                ))
-            })
+            host.present_with_compositor(
+                &[(&scene, state), (&overlay, state)],
+                2,
+                |_, _| {
+                    attempted = true;
+                    Err(windows::core::Error::from_hresult(
+                        windows::Win32::Foundation::E_FAIL,
+                    ))
+                },
+                |_, _| {},
+            )
             .is_none(),
             "injected compositor failure"
         );
@@ -3473,59 +3492,34 @@ mod present_plane_tests {
             host.present(&[(&scene, state)], 3).is_some(),
             "single-plane presentation after compositor initialization failed"
         );
+        let mut pixel = None;
         assert!(
-            host.present(&[(&scene, state), (&overlay, state)], 4)
-                .is_some(),
+            host.present_with_compositor(
+                &[(&scene, state), (&overlay, state)],
+                4,
+                Compositor::new,
+                |buffer, footprint| {
+                    let mut mapped = std::ptr::null_mut();
+                    // SAFETY: execute waited for the pre-Present copy. Read one
+                    // RGBA pixel from its footprint, before unmapping the buffer.
+                    unsafe {
+                        buffer.Map(0, None, Some(&mut mapped)).unwrap();
+                        pixel = Some(
+                            mapped
+                                .cast::<u8>()
+                                .add(footprint.Offset as usize)
+                                .cast::<[u8; 4]>()
+                                .read(),
+                        );
+                        buffer.Unmap(0, None);
+                    }
+                },
+            )
+            .is_some(),
             "compositor initialization can be retried after failure"
         );
-        let back = {
-            let presenter = host.presenter.lock().unwrap_or_else(|e| e.into_inner());
-            let presenter = presenter.as_ref().unwrap();
-            // SAFETY: the swap chain owns BUFFERS live back buffers. Present advanced
-            // its index, so the preceding buffer holds the frame just composed.
-            unsafe {
-                let index =
-                    (presenter.swap_chain.GetCurrentBackBufferIndex() + BUFFERS - 1) % BUFFERS;
-                presenter
-                    .swap_chain
-                    .GetBuffer::<ID3D12Resource>(index)
-                    .unwrap()
-            }
-        };
-        let copy = host.new_list().unwrap();
-        // SAFETY: the preceding presentation completed, the back buffer is live,
-        // and this list is open. Restore PRESENT after reading its contents.
-        let (buffer, footprint) = unsafe {
-            copy.list.ResourceBarrier(&[transition(
-                &back,
-                D3D12_RESOURCE_STATE_PRESENT,
-                D3D12_RESOURCE_STATE_COPY_SOURCE,
-            )]);
-            let readback = crate::capture::read_back(&host.device, &copy.list, &back).unwrap();
-            copy.list.ResourceBarrier(&[transition(
-                &back,
-                D3D12_RESOURCE_STATE_COPY_SOURCE,
-                D3D12_RESOURCE_STATE_PRESENT,
-            )]);
-            readback
-        };
-        copy.close();
-        host.execute(&[&copy]);
-        let mut mapped = std::ptr::null_mut();
-        // SAFETY: execute waited for the copy; the footprint contains at least
-        // one RGBA pixel. Copy that pixel before unmapping the readback buffer.
-        let pixel = unsafe {
-            buffer.Map(0, None, Some(&mut mapped)).unwrap();
-            let pixel = mapped
-                .cast::<u8>()
-                .add(footprint.Offset as usize)
-                .cast::<[u8; 4]>()
-                .read();
-            buffer.Unmap(0, None);
-            pixel
-        };
         // Premultiplied half-blue over opaque red: neither an ignored overlay
         // (red) nor a replaced scene (blue) may pass this check.
-        assert_eq!(pixel, [127, 0, 128, 255]);
+        assert_eq!(pixel, Some([127, 0, 128, 255]));
     }
 }
