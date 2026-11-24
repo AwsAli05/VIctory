@@ -19,7 +19,9 @@ A pull request is merged when **all** of these hold:
 4. With it, `cargo check --workspace --all-targets` passes.
 5. With it, the repository's asset policy (`cargo xtask policy`) passes: nothing from the game, no archives,
    no binaries the policy refuses.
-6. It is not held (rule 4).
+6. It does not change `.github/workflows/`. The Actions token cannot push workflow changes, and the Forge does
+   not run other people's CI changes unreviewed. Such pull requests are listed as "changes CI workflows".
+7. It is not held (rule 4).
 
 Pull requests are tried **oldest first** (by number). An older one wins a conflict with a newer one. That is a
 fixed order, not a judgement of quality.
@@ -34,6 +36,7 @@ Every open pull request gets one result:
 | conflicts with main | fails rule 2.2: rebase onto `main` |
 | conflicts with pull requests | fails rule 2.3: the pull requests named under *with* changed the same files first |
 | breaks the build | fails rule 2.4 or 2.5: the first error is shown |
+| changes CI workflows | rule 2.6 |
 | held | rule 4 |
 | draft | skipped until ready |
 

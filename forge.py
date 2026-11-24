@@ -129,6 +129,11 @@ for p in prs:
         mt = git("merge-tree", "--write-tree", "--name-only", "--no-messages", base, ref(n))
         if mt.returncode == 1:
             status[n] = {"result": "conflicts with main", "files": mt.stdout.split()[1:6]}
+        elif any(f.startswith(".github/workflows/") for f in changed(n)):
+            # The Actions token cannot push workflow changes, and the Forge
+            # does not run other people's CI changes unreviewed.
+            status[n] = {"result": "changes CI workflows",
+                         "files": [f for f in changed(n) if f.startswith(".github/workflows/")][:5]}
         elif mt.returncode:
             status[n] = {"result": "error", "detail": mt.stderr.strip()[-200:]}
         else:
@@ -241,7 +246,7 @@ for p in prs:
     s = status.get(p["number"], {"result": "?"})
     by.setdefault(s["result"], []).append((p, s))
 order = ["in forge", "conflicts with pull requests", "conflicts with main", "breaks the build",
-         "held", "draft", "not fetched", "error", "?"]
+         "changes CI workflows", "held", "draft", "not fetched", "error", "?"]
 json.dump({"generated": now, "base": base, "head": good, "branch": a.branch, "tests": tests,
            "status": {p["number"]: status.get(p["number"]) for p in prs}},
           open(os.path.join(a.out, "status.json"), "w", encoding="utf-8"), indent=1)

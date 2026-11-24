@@ -28,6 +28,7 @@ The Forge is not a fork of the project and does not replace review. Pull request
 | conflicts with main | Does not merge with current `main` on its own. | Rebase onto `main`. |
 | conflicts with pull requests | Merges with `main`, but not after the pull requests listed in *with*. These changed the same files first. | Look at those pull requests: often one of them already does the same, or the two need to agree. |
 | breaks the build | Merges, but `cargo check --workspace --all-targets` or the repository's asset policy (`cargo xtask policy`) fails with it (first error shown). Often the pull request is older than an API change on `main`. | Rebase and build; remove files the policy refuses. |
+| changes CI workflows | Changes `.github/workflows/`, which the Forge does not merge (the Actions token cannot push it, and other people's CI changes are not run unreviewed). | Nothing: it is reviewed upstream as usual. |
 | held | Left out on purpose: known to break the title in testing, or adding files the asset policy refuses (reason given in [held.json](held.json)). | See the reason. |
 | draft | Skipped until it is ready for review. | |
 
