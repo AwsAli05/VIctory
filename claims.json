@@ -1,26 +1,8 @@
 {
- "updated": "2026-11-24T20:46Z",
+ "updated": "2026-11-24T21:19Z",
  "tasks": [
   {
-   "id": "FIND-1",
-   "status": "open",
-   "holder": null,
-   "pr": null
-  },
-  {
-   "id": "FIND-2",
-   "status": "open",
-   "holder": null,
-   "pr": null
-  },
-  {
    "id": "FIND-3",
-   "status": "open",
-   "holder": null,
-   "pr": null
-  },
-  {
-   "id": "FIND-4",
    "status": "open",
    "holder": null,
    "pr": null
@@ -29,6 +11,42 @@
    "id": "FIND-5",
    "status": "open",
    "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-6",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-7",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-8",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "TEST-MED3-NAN",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-1",
+   "status": "claimed",
+   "holder": "Luislariosss",
+   "pr": null
+  },
+  {
+   "id": "FIND-2",
+   "status": "claimed",
+   "holder": "aycow",
    "pr": null
   },
   {
@@ -116,6 +134,84 @@
    "pr": null
   },
   {
+   "id": "NEW-13",
+   "status": "claimed",
+   "holder": "Jitheswar",
+   "pr": null
+  },
+  {
+   "id": "NEW-14",
+   "status": "claimed",
+   "holder": "zhaibingye",
+   "pr": null
+  },
+  {
+   "id": "NEW-15",
+   "status": "claimed",
+   "holder": "Calvix2k",
+   "pr": null
+  },
+  {
+   "id": "NEW-16",
+   "status": "claimed",
+   "holder": "Calvix2k",
+   "pr": null
+  },
+  {
+   "id": "NEW-17",
+   "status": "claimed",
+   "holder": "Calvix2k",
+   "pr": null
+  },
+  {
+   "id": "NEW-18",
+   "status": "claimed",
+   "holder": "Calvix2k",
+   "pr": null
+  },
+  {
+   "id": "NEW-19",
+   "status": "claimed",
+   "holder": "Jitheswar",
+   "pr": null
+  },
+  {
+   "id": "NEW-20",
+   "status": "claimed",
+   "holder": "JurajSimicevic",
+   "pr": null
+  },
+  {
+   "id": "NEW-21",
+   "status": "claimed",
+   "holder": "aycow",
+   "pr": null
+  },
+  {
+   "id": "NEW-22",
+   "status": "claimed",
+   "holder": "jaschinski97-ops",
+   "pr": null
+  },
+  {
+   "id": "NEW-23",
+   "status": "claimed",
+   "holder": "jaschinski97-ops",
+   "pr": null
+  },
+  {
+   "id": "NEW-24",
+   "status": "claimed",
+   "holder": "jaschinski97-ops",
+   "pr": null
+  },
+  {
+   "id": "NEW-25",
+   "status": "claimed",
+   "holder": "zhaibingye",
+   "pr": null
+  },
+  {
    "id": "SHADER-GLOBAL-ATOMICS",
    "status": "claimed",
    "holder": "KevinPratap",
@@ -134,16 +230,16 @@
    "pr": null
   },
   {
-   "id": "TEST-MED3-NAN",
-   "status": "claimed",
-   "holder": "aycow",
-   "pr": null
-  },
-  {
    "id": "TEST-PUT-STRING",
    "status": "claimed",
    "holder": "avt0m4t48",
    "pr": null
+  },
+  {
+   "id": "FIND-4",
+   "status": "in review",
+   "holder": "Calvix2k",
+   "pr": 1554
   },
   {
    "id": "GPU-PIPELINE-LIBRARY-SIZE",
