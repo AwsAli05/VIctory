@@ -333,6 +333,17 @@ mod tests {
     }
 
     #[test]
+    fn present_compositor_builds_both_pipeline_states() {
+        let Some(host) = host() else {
+            eprintln!("skipping compositor initialization: no D3D12 device");
+            return;
+        };
+        Compositor::new(&host.device, DXGI_FORMAT_R8G8B8A8_UNORM)
+            .expect("create compositor root signature and both pipeline states");
+        eprintln!("PresentX compositor initialized");
+    }
+
+    #[test]
     fn warp_adapter_accepts_only_software() {
         // This probes DXGI without creating a D3D12 device or running a title.
         // SAFETY: plain DXGI adapter queries.
