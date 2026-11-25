@@ -63,7 +63,7 @@ Use a worktree of its own: the tool resets it. With `--limit 25` it tries only t
 
 Use `--triage-only` with the same command to write the report without checking out a branch or running builds. The report lists PRs already incorporated in `main` and potential overlaps based on the merge result, linked issues, or titles and changed files. The JSON includes the reported PR head and both sides of each conflict.
 
-To work on a reported conflict, fetch the PR branch and the reported merge target into your clone. A conflict with `main` uses the report's `base` commit. A conflict with other PRs uses a commit from `forge/main`, which contains other authors' changes. Use that worktree to test integration and apply the relevant fix separately on the PR branch.
+To work on a reported conflict, fetch the PR branch and the reported merge target into your clone. A conflict with `main` uses the report's `base` commit. For a conflict with other PRs, fetch `forge/main` from the Forge fork. Use that worktree to test integration and apply the relevant fix separately on the PR branch. If Forge discarded the target during a failed build, use the listed PRs and files to reproduce the conflict locally.
 
 ```
 python -I triage.py resolve --repo ../VIctory --status /path/to/status.json --pr 123 --worktree ../resolve-123
