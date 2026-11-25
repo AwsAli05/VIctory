@@ -240,7 +240,13 @@ fn record(list: &HostList, resource: This, texture: &ID3D12Resource, staging: &S
             let f = footprint.Footprint;
             // SAFETY: live resources.
             let (gpu, d) = unsafe { (staging.buffer.GetGPUVirtualAddress(), texture.GetDesc()) };
-            let len = u64::from(f.RowPitch) * u64::from(staging.rows[i]) * u64::from(f.Depth);
+            let len = subresource_len(
+                footprint.Offset,
+                f.RowPitch as usize,
+                staging.rows[i],
+                f.Depth,
+                staging.size,
+            ) as u64;
             list.note_read(
                 || {
                     format!(
@@ -458,6 +464,11 @@ fn staging(resource: This, texture: &ID3D12Resource) -> Option<Arc<Staging>> {
             Some(&mut total),
         );
     }
+    // Both D3D12 copies and mapped CPU pointers use these offsets.
+    if footprints.iter().any(|f| f.Offset >= total) {
+        once!(?desc, total, "texture upload footprint outside its staging buffer");
+        return None;
+    }
     let (buffer, data) = host.upload_buffer(total)?;
     crate::host::name(&buffer, || {
         format!(
@@ -494,6 +505,61 @@ mod tests {
         assert_eq!(subresource_len(0, 256, 4, 1, 784), 784);
         assert_eq!(subresource_len(512, 256, 4, 1, 784), 272);
         assert_eq!(subresource_len(0, 256, 4, 1, 2048), 1024);
+        // A 10x6 RGBA8 texture with two mips (the last row contains 20 bytes).
+        let total = 1536 + 2 * 256 + 20;
+        assert_eq!(subresource_len(0, 256, 6, 1, total), 1536);
+        assert_eq!(subresource_len(1536, 256, 3, 1, total), 532);
+        assert_eq!(subresource_len(total, 256, 3, 1, total), 0);
+        assert_eq!(subresource_len(total + 1, 256, 3, 1, total), 0);
+    }
+
+    #[test]
+    fn last_bc4_mip_ends_after_the_active_block() {
+        use windows::Win32::Graphics::Dxgi::Common::{DXGI_FORMAT_BC4_UNORM, DXGI_SAMPLE_DESC};
+
+        let Some(host) = host() else {
+            return;
+        };
+        let desc = D3D12_RESOURCE_DESC {
+            Dimension: D3D12_RESOURCE_DIMENSION_TEXTURE2D,
+            Width: 8,
+            Height: 4,
+            DepthOrArraySize: 1,
+            MipLevels: 2,
+            Format: DXGI_FORMAT_BC4_UNORM,
+            SampleDesc: DXGI_SAMPLE_DESC { Count: 1, Quality: 0 },
+            ..Default::default()
+        };
+        let mut footprints = [D3D12_PLACED_SUBRESOURCE_FOOTPRINT::default(); 2];
+        let mut rows = [0; 2];
+        let mut row_bytes = [0; 2];
+        let mut total = 0;
+        // SAFETY: each output array has room for both subresources.
+        unsafe {
+            host.device.GetCopyableFootprints(
+                &desc,
+                0,
+                2,
+                0,
+                Some(footprints.as_mut_ptr()),
+                Some(rows.as_mut_ptr()),
+                Some(row_bytes.as_mut_ptr()),
+                Some(&mut total),
+            );
+        }
+        let last = footprints[1];
+        assert_eq!(row_bytes[1], 8);
+        assert!(u64::from(last.Footprint.RowPitch) > row_bytes[1]);
+        assert_eq!(
+            subresource_len(
+                last.Offset,
+                last.Footprint.RowPitch as usize,
+                rows[1],
+                last.Footprint.Depth,
+                total
+            ),
+            row_bytes[1] as usize
+        );
     }
 
     #[test]
