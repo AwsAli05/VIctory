@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T13:48Z",
+ "updated": "2026-11-25T22:53Z",
  "tasks": [
   {
    "id": "FIND-5",
@@ -15,12 +15,6 @@
   },
   {
    "id": "FIND-9",
-   "status": "open",
-   "holder": null,
-   "pr": null
-  },
-  {
-   "id": "FIND-11",
    "status": "open",
    "holder": null,
    "pr": null
@@ -56,19 +50,7 @@
    "pr": null
   },
   {
-   "id": "FIND-18",
-   "status": "open",
-   "holder": null,
-   "pr": null
-  },
-  {
    "id": "FIND-19",
-   "status": "open",
-   "holder": null,
-   "pr": null
-  },
-  {
-   "id": "FIND-20",
    "status": "open",
    "holder": null,
    "pr": null
@@ -80,13 +62,79 @@
    "pr": null
   },
   {
+   "id": "FIND-22",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-24",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-25",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-26",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-27",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-28",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-29",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-30",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-31",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
    "id": "NEW-13",
    "status": "open",
    "holder": null,
    "pr": null
   },
   {
-   "id": "NEW-20",
+   "id": "NEW-56",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "NEW-61",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "NEW-284",
    "status": "open",
    "holder": null,
    "pr": null
@@ -104,12 +152,6 @@
    "pr": null
   },
   {
-   "id": "FIND-3",
-   "status": "claimed",
-   "holder": "makmatvey",
-   "pr": null
-  },
-  {
    "id": "FIND-6",
    "status": "claimed",
    "holder": "WhiteDragonul",
@@ -119,6 +161,24 @@
    "id": "FIND-8",
    "status": "claimed",
    "holder": "fiestorra",
+   "pr": null
+  },
+  {
+   "id": "FIND-11",
+   "status": "claimed",
+   "holder": "jujumoneylol",
+   "pr": null
+  },
+  {
+   "id": "FIND-18",
+   "status": "claimed",
+   "holder": "MrEjecutor",
+   "pr": null
+  },
+  {
+   "id": "FIND-20",
+   "status": "claimed",
+   "holder": "Tutophy",
    "pr": null
   },
   {
@@ -221,6 +281,12 @@
    "id": "NEW-19",
    "status": "claimed",
    "holder": "Jitheswar",
+   "pr": null
+  },
+  {
+   "id": "NEW-20",
+   "status": "claimed",
+   "holder": "HoLa-Lee",
    "pr": null
   },
   {
@@ -434,21 +500,9 @@
    "pr": null
   },
   {
-   "id": "NEW-56",
-   "status": "claimed",
-   "holder": "BaggyALPHA",
-   "pr": null
-  },
-  {
    "id": "NEW-57",
    "status": "claimed",
    "holder": "Dathinel",
-   "pr": null
-  },
-  {
-   "id": "NEW-58",
-   "status": "claimed",
-   "holder": "BaggyALPHA",
    "pr": null
   },
   {
@@ -461,12 +515,6 @@
    "id": "NEW-60",
    "status": "claimed",
    "holder": "rminzao",
-   "pr": null
-  },
-  {
-   "id": "NEW-61",
-   "status": "claimed",
-   "holder": "BaggyALPHA",
    "pr": null
   },
   {
@@ -515,12 +563,6 @@
    "id": "NEW-69",
    "status": "claimed",
    "holder": "Halfect",
-   "pr": null
-  },
-  {
-   "id": "NEW-70",
-   "status": "claimed",
-   "holder": "BaggyALPHA",
    "pr": null
   },
   {
@@ -596,12 +638,6 @@
    "pr": null
   },
   {
-   "id": "NEW-83",
-   "status": "claimed",
-   "holder": "TheGrayOrange",
-   "pr": null
-  },
-  {
    "id": "NEW-84",
    "status": "claimed",
    "holder": "Razdva122",
@@ -662,12 +698,6 @@
    "pr": null
   },
   {
-   "id": "NEW-94",
-   "status": "claimed",
-   "holder": "Sidlik900",
-   "pr": null
-  },
-  {
    "id": "NEW-95",
    "status": "claimed",
    "holder": "romeawayfromhome-rgb",
@@ -689,30 +719,6 @@
    "id": "NEW-98",
    "status": "claimed",
    "holder": "andrewpozdnakov7-jpg",
-   "pr": null
-  },
-  {
-   "id": "NEW-99",
-   "status": "claimed",
-   "holder": "Sidlik900",
-   "pr": null
-  },
-  {
-   "id": "NEW-100",
-   "status": "claimed",
-   "holder": "chaseb64",
-   "pr": null
-  },
-  {
-   "id": "NEW-101",
-   "status": "claimed",
-   "holder": "chaseb64",
-   "pr": null
-  },
-  {
-   "id": "NEW-102",
-   "status": "claimed",
-   "holder": "Sidlik900",
    "pr": null
   },
   {
@@ -806,21 +812,9 @@
    "pr": null
   },
   {
-   "id": "NEW-118",
-   "status": "claimed",
-   "holder": "RomainKH",
-   "pr": null
-  },
-  {
    "id": "NEW-119",
    "status": "claimed",
    "holder": "andrewpozdnakov7-jpg",
-   "pr": null
-  },
-  {
-   "id": "NEW-120",
-   "status": "claimed",
-   "holder": "jaschinski97-ops",
    "pr": null
   },
   {
@@ -938,6 +932,870 @@
    "pr": null
   },
   {
+   "id": "NEW-140",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-141",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-142",
+   "status": "claimed",
+   "holder": "VlREX",
+   "pr": null
+  },
+  {
+   "id": "NEW-143",
+   "status": "claimed",
+   "holder": "desplmfao",
+   "pr": null
+  },
+  {
+   "id": "NEW-144",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-145",
+   "status": "claimed",
+   "holder": "VlREX",
+   "pr": null
+  },
+  {
+   "id": "NEW-146",
+   "status": "claimed",
+   "holder": "VlREX",
+   "pr": null
+  },
+  {
+   "id": "NEW-147",
+   "status": "claimed",
+   "holder": "VlREX",
+   "pr": null
+  },
+  {
+   "id": "NEW-148",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-149",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-150",
+   "status": "claimed",
+   "holder": "HoLa-Lee",
+   "pr": null
+  },
+  {
+   "id": "NEW-151",
+   "status": "claimed",
+   "holder": "HoLa-Lee",
+   "pr": null
+  },
+  {
+   "id": "NEW-152",
+   "status": "claimed",
+   "holder": "VlREX",
+   "pr": null
+  },
+  {
+   "id": "NEW-153",
+   "status": "claimed",
+   "holder": "VlREX",
+   "pr": null
+  },
+  {
+   "id": "NEW-154",
+   "status": "claimed",
+   "holder": "VlREX",
+   "pr": null
+  },
+  {
+   "id": "NEW-155",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-156",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-157",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-158",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-159",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-160",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-161",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-162",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-163",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-164",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-165",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-166",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-167",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-168",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-169",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-170",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-171",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-172",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-173",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-174",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-175",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-176",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-177",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-178",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-179",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-180",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-181",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-182",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-183",
+   "status": "claimed",
+   "holder": "MrEjecutor",
+   "pr": null
+  },
+  {
+   "id": "NEW-184",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-185",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-186",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-187",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-188",
+   "status": "claimed",
+   "holder": "reeledMarek",
+   "pr": null
+  },
+  {
+   "id": "NEW-189",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-190",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-191",
+   "status": "claimed",
+   "holder": "xyzMikah",
+   "pr": null
+  },
+  {
+   "id": "NEW-192",
+   "status": "claimed",
+   "holder": "jaschinski97-ops",
+   "pr": null
+  },
+  {
+   "id": "NEW-193",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-194",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-195",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-196",
+   "status": "claimed",
+   "holder": "XeNS1",
+   "pr": null
+  },
+  {
+   "id": "NEW-197",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-198",
+   "status": "claimed",
+   "holder": "XeNS1",
+   "pr": null
+  },
+  {
+   "id": "NEW-199",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-200",
+   "status": "claimed",
+   "holder": "cloph-dsp",
+   "pr": null
+  },
+  {
+   "id": "NEW-201",
+   "status": "claimed",
+   "holder": "cloph-dsp",
+   "pr": null
+  },
+  {
+   "id": "NEW-202",
+   "status": "claimed",
+   "holder": "romeawayfromhome-rgb",
+   "pr": null
+  },
+  {
+   "id": "NEW-203",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-204",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-205",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-206",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-207",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-208",
+   "status": "claimed",
+   "holder": "XeNS1",
+   "pr": null
+  },
+  {
+   "id": "NEW-209",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-210",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-211",
+   "status": "claimed",
+   "holder": "JoeY54",
+   "pr": null
+  },
+  {
+   "id": "NEW-212",
+   "status": "claimed",
+   "holder": "JoeY54",
+   "pr": null
+  },
+  {
+   "id": "NEW-213",
+   "status": "claimed",
+   "holder": "JoeY54",
+   "pr": null
+  },
+  {
+   "id": "NEW-215",
+   "status": "claimed",
+   "holder": "jaschinski97-ops",
+   "pr": null
+  },
+  {
+   "id": "NEW-216",
+   "status": "claimed",
+   "holder": "jaschinski97-ops",
+   "pr": null
+  },
+  {
+   "id": "NEW-217",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-218",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-219",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-220",
+   "status": "claimed",
+   "holder": "XeNS1",
+   "pr": null
+  },
+  {
+   "id": "NEW-221",
+   "status": "claimed",
+   "holder": "Rickeal-Boss",
+   "pr": null
+  },
+  {
+   "id": "NEW-222",
+   "status": "claimed",
+   "holder": "jaschinski97-ops",
+   "pr": null
+  },
+  {
+   "id": "NEW-223",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-224",
+   "status": "claimed",
+   "holder": "XeNS1",
+   "pr": null
+  },
+  {
+   "id": "NEW-225",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-226",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-227",
+   "status": "claimed",
+   "holder": "mgunes1311-lab",
+   "pr": null
+  },
+  {
+   "id": "NEW-228",
+   "status": "claimed",
+   "holder": "mgunes1311-lab",
+   "pr": null
+  },
+  {
+   "id": "NEW-229",
+   "status": "claimed",
+   "holder": "mgunes1311-lab",
+   "pr": null
+  },
+  {
+   "id": "NEW-230",
+   "status": "claimed",
+   "holder": "mgunes1311-lab",
+   "pr": null
+  },
+  {
+   "id": "NEW-231",
+   "status": "claimed",
+   "holder": "mgunes1311-lab",
+   "pr": null
+  },
+  {
+   "id": "NEW-232",
+   "status": "claimed",
+   "holder": "mgunes1311-lab",
+   "pr": null
+  },
+  {
+   "id": "NEW-233",
+   "status": "claimed",
+   "holder": "mgunes1311-lab",
+   "pr": null
+  },
+  {
+   "id": "NEW-234",
+   "status": "claimed",
+   "holder": "mgunes1311-lab",
+   "pr": null
+  },
+  {
+   "id": "NEW-235",
+   "status": "claimed",
+   "holder": "mgunes1311-lab",
+   "pr": null
+  },
+  {
+   "id": "NEW-236",
+   "status": "claimed",
+   "holder": "mgunes1311-lab",
+   "pr": null
+  },
+  {
+   "id": "NEW-237",
+   "status": "claimed",
+   "holder": "mgunes1311-lab",
+   "pr": null
+  },
+  {
+   "id": "NEW-238",
+   "status": "claimed",
+   "holder": "mgunes1311-lab",
+   "pr": null
+  },
+  {
+   "id": "NEW-239",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-240",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-241",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-242",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-243",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-244",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-245",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-246",
+   "status": "claimed",
+   "holder": "romeawayfromhome-rgb",
+   "pr": null
+  },
+  {
+   "id": "NEW-247",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-248",
+   "status": "claimed",
+   "holder": "XeNS1",
+   "pr": null
+  },
+  {
+   "id": "NEW-249",
+   "status": "claimed",
+   "holder": "XeNS1",
+   "pr": null
+  },
+  {
+   "id": "NEW-250",
+   "status": "claimed",
+   "holder": "Vedoxdev123",
+   "pr": null
+  },
+  {
+   "id": "NEW-251",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-252",
+   "status": "claimed",
+   "holder": "RVZO6",
+   "pr": null
+  },
+  {
+   "id": "NEW-253",
+   "status": "claimed",
+   "holder": "RVZO6",
+   "pr": null
+  },
+  {
+   "id": "NEW-254",
+   "status": "claimed",
+   "holder": "RVZO6",
+   "pr": null
+  },
+  {
+   "id": "NEW-255",
+   "status": "claimed",
+   "holder": "RVZO6",
+   "pr": null
+  },
+  {
+   "id": "NEW-256",
+   "status": "claimed",
+   "holder": "RVZO6",
+   "pr": null
+  },
+  {
+   "id": "NEW-257",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-258",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-259",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-260",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-261",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-262",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-263",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-264",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-265",
+   "status": "claimed",
+   "holder": "GuckstduWeitaaa",
+   "pr": null
+  },
+  {
+   "id": "NEW-266",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-267",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-268",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-269",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-270",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-271",
+   "status": "claimed",
+   "holder": "romeawayfromhome-rgb",
+   "pr": null
+  },
+  {
+   "id": "NEW-272",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-273",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-274",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-275",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-276",
+   "status": "claimed",
+   "holder": "VlREX",
+   "pr": null
+  },
+  {
+   "id": "NEW-277",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-278",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-279",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-280",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-281",
+   "status": "claimed",
+   "holder": "andrewpozdnakov7-jpg",
+   "pr": null
+  },
+  {
+   "id": "NEW-282",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-283",
+   "status": "claimed",
+   "holder": "oni-swr",
+   "pr": null
+  },
+  {
+   "id": "NEW-285",
+   "status": "claimed",
+   "holder": "pes7",
+   "pr": null
+  },
+  {
    "id": "SHADER-GLOBAL-ATOMICS",
    "status": "claimed",
    "holder": "KevinPratap",
@@ -962,6 +1820,12 @@
    "pr": 1757
   },
   {
+   "id": "FIND-3",
+   "status": "in review",
+   "holder": "makmatvey",
+   "pr": 2456
+  },
+  {
    "id": "FIND-4",
    "status": "in review",
    "holder": "Calvix2k",
@@ -980,16 +1844,16 @@
    "pr": 2167
   },
   {
+   "id": "FIND-23",
+   "status": "in review",
+   "holder": "leftmove",
+   "pr": 2720
+  },
+  {
    "id": "GPU-SNAPSHOT-COST",
    "status": "in review",
    "holder": "avt0m4t48",
    "pr": 1681
-  },
-  {
-   "id": "NEW-2",
-   "status": "in review",
-   "holder": "pes7",
-   "pr": 1033
   },
   {
    "id": "NEW-4",
@@ -998,10 +1862,76 @@
    "pr": 1623
   },
   {
+   "id": "NEW-70",
+   "status": "in review",
+   "holder": "BaggyALPHA",
+   "pr": 2273
+  },
+  {
+   "id": "NEW-83",
+   "status": "in review",
+   "holder": "TheGrayOrange",
+   "pr": 2507
+  },
+  {
+   "id": "NEW-94",
+   "status": "in review",
+   "holder": "Sidlik900",
+   "pr": 2227
+  },
+  {
+   "id": "NEW-99",
+   "status": "in review",
+   "holder": "Sidlik900",
+   "pr": 2247
+  },
+  {
+   "id": "NEW-100",
+   "status": "in review",
+   "holder": "chaseb64",
+   "pr": 2648
+  },
+  {
+   "id": "NEW-101",
+   "status": "in review",
+   "holder": "chaseb64",
+   "pr": 2649
+  },
+  {
+   "id": "NEW-102",
+   "status": "in review",
+   "holder": "Sidlik900",
+   "pr": 2277
+  },
+  {
+   "id": "NEW-118",
+   "status": "in review",
+   "holder": "RomainKH",
+   "pr": 2342
+  },
+  {
+   "id": "NEW-120",
+   "status": "in review",
+   "holder": "jaschinski97-ops",
+   "pr": 1738
+  },
+  {
+   "id": "NEW-214",
+   "status": "in review",
+   "holder": "necrobytes",
+   "pr": 2673
+  },
+  {
    "id": "SHADER-MESH-LANES-AMD",
    "status": "in review",
    "holder": "aycow",
    "pr": 1759
+  },
+  {
+   "id": "NEW-2",
+   "status": "merged",
+   "holder": "pes7",
+   "pr": 1033
   },
   {
    "id": "NEW-3",
@@ -1014,6 +1944,12 @@
    "status": "merged",
    "holder": "pes7",
    "pr": 1635
+  },
+  {
+   "id": "NEW-58",
+   "status": "merged",
+   "holder": "BaggyALPHA",
+   "pr": 2033
   }
  ]
 }
