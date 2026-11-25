@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T21:19Z",
+ "updated": "2026-11-25T03:38Z",
  "tasks": [
   {
    "id": "FIND-3",
@@ -14,19 +14,43 @@
    "pr": null
   },
   {
-   "id": "FIND-6",
-   "status": "open",
-   "holder": null,
-   "pr": null
-  },
-  {
    "id": "FIND-7",
    "status": "open",
    "holder": null,
    "pr": null
   },
   {
-   "id": "FIND-8",
+   "id": "FIND-9",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-10",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-11",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-12",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "FIND-13",
+   "status": "open",
+   "holder": null,
+   "pr": null
+  },
+  {
+   "id": "NEW-20",
    "status": "open",
    "holder": null,
    "pr": null
@@ -38,15 +62,21 @@
    "pr": null
   },
   {
-   "id": "FIND-1",
-   "status": "claimed",
-   "holder": "Luislariosss",
-   "pr": null
-  },
-  {
    "id": "FIND-2",
    "status": "claimed",
    "holder": "aycow",
+   "pr": null
+  },
+  {
+   "id": "FIND-6",
+   "status": "claimed",
+   "holder": "WhiteDragonul",
+   "pr": null
+  },
+  {
+   "id": "FIND-8",
+   "status": "claimed",
+   "holder": "fiestorra",
    "pr": null
   },
   {
@@ -62,37 +92,19 @@
    "pr": null
   },
   {
+   "id": "GPU-PIPELINE-LIBRARY-SIZE",
+   "status": "claimed",
+   "holder": "avt0m4t48",
+   "pr": null
+  },
+  {
    "id": "NEW-1",
    "status": "claimed",
    "holder": "oddmaniv",
    "pr": null
   },
   {
-   "id": "NEW-2",
-   "status": "claimed",
-   "holder": "pes7",
-   "pr": null
-  },
-  {
-   "id": "NEW-3",
-   "status": "claimed",
-   "holder": "pes7",
-   "pr": null
-  },
-  {
-   "id": "NEW-4",
-   "status": "claimed",
-   "holder": "pes7",
-   "pr": null
-  },
-  {
    "id": "NEW-5",
-   "status": "claimed",
-   "holder": "pes7",
-   "pr": null
-  },
-  {
-   "id": "NEW-6",
    "status": "claimed",
    "holder": "pes7",
    "pr": null
@@ -176,33 +188,9 @@
    "pr": null
   },
   {
-   "id": "NEW-20",
-   "status": "claimed",
-   "holder": "JurajSimicevic",
-   "pr": null
-  },
-  {
    "id": "NEW-21",
    "status": "claimed",
    "holder": "aycow",
-   "pr": null
-  },
-  {
-   "id": "NEW-22",
-   "status": "claimed",
-   "holder": "jaschinski97-ops",
-   "pr": null
-  },
-  {
-   "id": "NEW-23",
-   "status": "claimed",
-   "holder": "jaschinski97-ops",
-   "pr": null
-  },
-  {
-   "id": "NEW-24",
-   "status": "claimed",
-   "holder": "jaschinski97-ops",
    "pr": null
   },
   {
@@ -212,15 +200,219 @@
    "pr": null
   },
   {
-   "id": "SHADER-GLOBAL-ATOMICS",
+   "id": "NEW-26",
    "status": "claimed",
-   "holder": "KevinPratap",
+   "holder": "pes7",
    "pr": null
   },
   {
-   "id": "SHADER-MESH-LANES-AMD",
+   "id": "NEW-27",
    "status": "claimed",
-   "holder": "aycow",
+   "holder": "JurajSimicevic",
+   "pr": null
+  },
+  {
+   "id": "NEW-28",
+   "status": "claimed",
+   "holder": "JurajSimicevic",
+   "pr": null
+  },
+  {
+   "id": "NEW-29",
+   "status": "claimed",
+   "holder": "dereoalex",
+   "pr": null
+  },
+  {
+   "id": "NEW-30",
+   "status": "claimed",
+   "holder": "alexdeliu",
+   "pr": null
+  },
+  {
+   "id": "NEW-31",
+   "status": "claimed",
+   "holder": "kappalegoat",
+   "pr": null
+  },
+  {
+   "id": "NEW-32",
+   "status": "claimed",
+   "holder": "Calvix2k",
+   "pr": null
+  },
+  {
+   "id": "NEW-33",
+   "status": "claimed",
+   "holder": "Calvix2k",
+   "pr": null
+  },
+  {
+   "id": "NEW-34",
+   "status": "claimed",
+   "holder": "Calvix2k",
+   "pr": null
+  },
+  {
+   "id": "NEW-35",
+   "status": "claimed",
+   "holder": "JurajSimicevic",
+   "pr": null
+  },
+  {
+   "id": "NEW-36",
+   "status": "claimed",
+   "holder": "Calvix2k",
+   "pr": null
+  },
+  {
+   "id": "NEW-37",
+   "status": "claimed",
+   "holder": "AlanQiang0418",
+   "pr": null
+  },
+  {
+   "id": "NEW-38",
+   "status": "claimed",
+   "holder": "Damokles2",
+   "pr": null
+  },
+  {
+   "id": "NEW-39",
+   "status": "claimed",
+   "holder": "TinkerBell-90",
+   "pr": null
+  },
+  {
+   "id": "NEW-40",
+   "status": "claimed",
+   "holder": "necrobytes",
+   "pr": null
+  },
+  {
+   "id": "NEW-41",
+   "status": "claimed",
+   "holder": "alexdeliu",
+   "pr": null
+  },
+  {
+   "id": "NEW-42",
+   "status": "claimed",
+   "holder": "alexdeliu",
+   "pr": null
+  },
+  {
+   "id": "NEW-43",
+   "status": "claimed",
+   "holder": "Damokles2",
+   "pr": null
+  },
+  {
+   "id": "NEW-44",
+   "status": "claimed",
+   "holder": "arthurprudenteres",
+   "pr": null
+  },
+  {
+   "id": "NEW-45",
+   "status": "claimed",
+   "holder": "nicolasveilleux",
+   "pr": null
+  },
+  {
+   "id": "NEW-46",
+   "status": "claimed",
+   "holder": "necrobytes",
+   "pr": null
+  },
+  {
+   "id": "NEW-47",
+   "status": "claimed",
+   "holder": "nicolasveilleux",
+   "pr": null
+  },
+  {
+   "id": "NEW-48",
+   "status": "claimed",
+   "holder": "oVolkra",
+   "pr": null
+  },
+  {
+   "id": "NEW-49",
+   "status": "claimed",
+   "holder": "Calvix2k",
+   "pr": null
+  },
+  {
+   "id": "NEW-50",
+   "status": "claimed",
+   "holder": "Calvix2k",
+   "pr": null
+  },
+  {
+   "id": "NEW-51",
+   "status": "claimed",
+   "holder": "Flyander",
+   "pr": null
+  },
+  {
+   "id": "NEW-52",
+   "status": "claimed",
+   "holder": "Calvix2k",
+   "pr": null
+  },
+  {
+   "id": "NEW-53",
+   "status": "claimed",
+   "holder": "Jitheswar",
+   "pr": null
+  },
+  {
+   "id": "NEW-54",
+   "status": "claimed",
+   "holder": "Jitheswar",
+   "pr": null
+  },
+  {
+   "id": "NEW-55",
+   "status": "claimed",
+   "holder": "necrobytes",
+   "pr": null
+  },
+  {
+   "id": "NEW-56",
+   "status": "claimed",
+   "holder": "Calvix2k",
+   "pr": null
+  },
+  {
+   "id": "NEW-57",
+   "status": "claimed",
+   "holder": "Halfect",
+   "pr": null
+  },
+  {
+   "id": "NEW-58",
+   "status": "claimed",
+   "holder": "TheGrayOrange",
+   "pr": null
+  },
+  {
+   "id": "NEW-59",
+   "status": "claimed",
+   "holder": "BaggyALPHA",
+   "pr": null
+  },
+  {
+   "id": "NEW-60",
+   "status": "claimed",
+   "holder": "Dathinel",
+   "pr": null
+  },
+  {
+   "id": "SHADER-GLOBAL-ATOMICS",
+   "status": "claimed",
+   "holder": "KevinPratap",
    "pr": null
   },
   {
@@ -236,22 +428,70 @@
    "pr": null
   },
   {
+   "id": "FIND-1",
+   "status": "in review",
+   "holder": "Luislariosss",
+   "pr": 1757
+  },
+  {
    "id": "FIND-4",
    "status": "in review",
    "holder": "Calvix2k",
    "pr": 1554
   },
   {
-   "id": "GPU-PIPELINE-LIBRARY-SIZE",
-   "status": "in review",
-   "holder": "avt0m4t48",
-   "pr": 1651
-  },
-  {
    "id": "GPU-SNAPSHOT-COST",
    "status": "in review",
    "holder": "avt0m4t48",
    "pr": 1681
+  },
+  {
+   "id": "NEW-2",
+   "status": "in review",
+   "holder": "pes7",
+   "pr": 1033
+  },
+  {
+   "id": "NEW-4",
+   "status": "in review",
+   "holder": "pes7",
+   "pr": 1623
+  },
+  {
+   "id": "NEW-22",
+   "status": "in review",
+   "holder": "jaschinski97-ops",
+   "pr": 1737
+  },
+  {
+   "id": "NEW-23",
+   "status": "in review",
+   "holder": "jaschinski97-ops",
+   "pr": 1738
+  },
+  {
+   "id": "NEW-24",
+   "status": "in review",
+   "holder": "jaschinski97-ops",
+   "pr": 1739
+  },
+  {
+   "id": "SHADER-MESH-LANES-AMD",
+   "status": "in review",
+   "holder": "aycow",
+   "pr": 1759
+  },
+  {
+   "id": "NEW-3",
+   "status": "merged",
+   "holder": "pes7",
+   "pr": 1180
+  },
+  {
+   "id": "NEW-6",
+   "status": "merged",
+   "holder": "pes7",
+   "pr": 1635
   }
  ]
 }
