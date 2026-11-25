@@ -2256,9 +2256,9 @@ mod tests {
             let info = host.device.GetResourceAllocationInfo(0, &[desc]);
             (desc, info.SizeInBytes)
         };
-        assert_eq!(desc.Width, 8 * u64::from(end));
+        assert_eq!(desc.Width, 16 * u64::from(end));
         assert!(size >= desc.Width + 8, "room for the mark");
-        let past = (data + 8 * end as usize) as *mut u64;
+        let past = (data + 16 * end as usize) as *mut u64;
         let mark = 0x5a5a_5a5a_5a5a_5a5a;
         // SAFETY: mapped memory of the buffer's allocation (checked).
         unsafe { past.write_unaligned(mark) };
