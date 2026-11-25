@@ -1162,6 +1162,14 @@ fn fits(texture: &ID3D12Resource, castable: &[u32], mut format: Option<&mut DXGI
     if view == 0 {
         return !typeless && (!unordered || typed_store(own));
     }
+    // A packed 16-bit target made R8G8B8A8_UNORM on this GPU
+    // (`resource::target_format`): views name the format it has.
+    if view != own && crate::resource::target_format(view) == own {
+        if let Some(format) = format {
+            *format = d.Format;
+        }
+        return !unordered || typed_store(own);
+    }
     let cast = castable.contains(&view);
     if family(view) != family(own) && !cast {
         once!(view, own, "view format of another family");
