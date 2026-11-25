@@ -195,6 +195,25 @@ The on/off switches below (`...=1`) are off when unset or set to `0`.
 Every build appends unhandled exceptions, panics, and host GPU failures to
 `crashes.log` in the title's data folder.
 
+On Windows, run a timed playtest with a diagnostics build and a config
+pointing to a test save directory. For example, adjust the keys and times
+for the title's setup and menus.
+
+```powershell
+cargo build --profile diag -p victory --features diagnostics
+powershell -NoProfile -ExecutionPolicy RemoteSigned -File .\tools\playtest.ps1 `
+    -Victory .\target\diag\victory.exe -Title $titleExe -Config $testConfig `
+    -Keys '18:Enter,26:Enter,35:Enter' -Seconds 120
+```
+
+Each run writes both logs and a `summary.json` with sampled frame rates,
+draw counts and the exit reason under `%LOCALAPPDATA%\victory\playtests`.
+The script stops the launcher at the time limit (exit 124) or when
+Windows reports less than 2 GiB of available virtual memory (exit 125).
+It returns the launcher exit code when the launcher exits on its own.
+Compare draw counts and check the rendered scene when interpreting frame
+rates from menus and from the world.
+
 For a startup breakpoint (`0x80000003`), run the diagnostics build with
 `VICTORY_CRASH_BREAKPOINTS=1`. Keep the console output along with the new
 `crashes.log` entries. A host DLL refusal includes the caller stack in the
