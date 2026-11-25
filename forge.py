@@ -91,24 +91,36 @@ git("fetch", "-q", a.remote, "main", check=True)
 base = git("rev-parse", f"{a.remote}/main", check=True).stdout.strip()
 base_tree = git("rev-parse", f"{base}^{{tree}}", check=True).stdout.strip()
 log("base", base)
-for i in range(0, len(prs), 100):
-    specs = [f"+refs/pull/{p['number']}/head:refs/forge/pr/{p['number']}" for p in prs[i:i + 100]]
-    f = git("fetch", "-q", a.remote, *specs)
-    if f.returncode:
-        log("fetch error", f.stderr.strip()[-300:])
-
-TRAILER = os.environ.get("FORGE_TRAILER", "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>")
-status = {}  # number -> dict(result, detail)
-files_of = {}  # number -> files the pull request changes against the base
 
 
 def ref(n):
     return f"refs/forge/pr/{n}"
 
 
+def fetched_heads():
+    refs = git("for-each-ref", "--format=%(refname) %(objectname)", "refs/forge/pr/", check=True).stdout
+    return dict(line.split() for line in refs.splitlines())
+
+
+heads = fetched_heads()
+need_fetch = [p for p in prs if heads.get(ref(p["number"])) != p["headRefOid"]]
+log(f"fetching {len(need_fetch)} PR heads, reusing {len(prs) - len(need_fetch)} pinned heads")
+for i in range(0, len(need_fetch), 100):
+    specs = [f"+refs/pull/{p['number']}/head:{ref(p['number'])}" for p in need_fetch[i:i + 100]]
+    f = git("fetch", "-q", a.remote, *specs)
+    if f.returncode:
+        log("fetch error", f.stderr.strip()[-300:])
+if need_fetch:
+    heads = fetched_heads()
+
+TRAILER = os.environ.get("FORGE_TRAILER", "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>")
+status = {}  # number -> dict(result, detail)
+files_of = {}  # number -> files the pull request changes against the base
+
+
 def changed(n):
     if n not in files_of:
-        paths = git("diff", "--name-only", "-z", f"{base}...{ref(n)}", check=True).stdout
+        paths = git("diff", "--name-only", "-z", f"{base}...{heads[ref(n)]}", check=True).stdout
         files_of[n] = set(paths.strip("\0").split("\0")) if paths else set()
     return files_of[n]
 
@@ -129,10 +141,10 @@ participants = []
 fingerprints = {}
 for p in prs:
     n = p["number"]
-    fetched = git("rev-parse", "-q", "--verify", ref(n))
-    if fetched.returncode:
+    fetched = heads.get(ref(n))
+    if not fetched:
         status[n] = {"result": "not fetched"}
-    elif fetched.stdout.strip() != p["headRefOid"]:
+    elif fetched != p["headRefOid"]:
         status[n] = {"result": "head changed"}
     elif p["isDraft"]:
         status[n] = {"result": "draft"}
@@ -141,7 +153,7 @@ for p in prs:
     elif n in held and held_now(held[n], p["headRefOid"]):
         status[n] = {"result": "held", "detail": reason(held[n])}
     else:
-        mt = git("merge-tree", "--write-tree", "--name-only", "--no-messages", "-z", base, ref(n))
+        mt = git("merge-tree", "--write-tree", "--name-only", "--no-messages", "-z", base, fetched)
         tree, *paths = mt.stdout.strip("\0").split("\0")
         if mt.returncode in (0, 1):
             changed(n)
@@ -158,7 +170,7 @@ for p in prs:
             status[n] = {"result": "changes CI workflows",
                          "files": [f for f in changed(n) if f.startswith(".github/workflows/")][:5]}
         else:
-            fingerprint = patch_id(a.repo, base, p["headRefOid"])
+            fingerprint = patch_id(a.repo, base, fetched)
             if fingerprint:
                 fingerprints[n] = (fingerprint, tree)
             todo.append(p)
@@ -174,7 +186,7 @@ pending = []
 
 def merge(n, title):
     msg = ["-m", f"Forge: #{n} {title}"] + (["-m", TRAILER] if TRAILER else [])
-    r = git("merge", "--no-ff", "-q", *msg, ref(n))
+    r = git("merge", "--no-ff", "-q", *msg, heads[ref(n)])
     if r.returncode == 0:
         return None
     paths = git("diff", "--name-only", "--diff-filter=U", "-z").stdout
