@@ -31,6 +31,16 @@ pub fn host_texture(
     Some((texture, state))
 }
 
+/// Records that a host library wrote a title texture on this list. From
+/// this submission onward, reads must use the GPU's texels.
+pub fn texture_written(list: *const Object, resource: *const Object) {
+    if let Some(host) = crate::list::host_list(list) {
+        crate::texture::host_writes(host, resource);
+        #[cfg(feature = "diagnostics")]
+        crate::capture::note_target(host, resource);
+    }
+}
+
 /// Runs `f` with the host list behind the title list `list` (open for
 /// recording); `None` without one. What `f` binds (descriptor heaps, root
 /// signatures, pipeline) is replaced before the list's next draw or

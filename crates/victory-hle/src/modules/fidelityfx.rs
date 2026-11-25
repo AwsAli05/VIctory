@@ -416,6 +416,7 @@ extern "C" fn ffxDispatch(context: *mut *mut c_void, desc: *mut Header) -> u32 {
     // SAFETY: an upscaling, by its type.
     let mut dispatch = unsafe { desc.cast::<DispatchUpscale>().read() };
     let list = dispatch.list.cast::<Object>().cast_const();
+    let output = dispatch.resources[OUTPUT].resource.cast::<Object>();
     // Alive for the call (the list holds them too).
     let mut textures = Vec::new();
     // An output the host cannot write as the upscaler does, and its bridge.
@@ -463,7 +464,7 @@ extern "C" fn ffxDispatch(context: *mut *mut c_void, desc: *mut Header) -> u32 {
         // SAFETY: a live texture.
         unsafe { t.GetDesc() }.Format.0
     }).collect::<Vec<_>>(), "FidelityFX: first upscaling, host formats of its textures");
-    victory_gpu::external::record(list, |host_list| {
+    let code = victory_gpu::external::record(list, |host_list| {
         dispatch.list = host_list.as_raw();
         // SAFETY: the PC dispatch on host objects; the context is the host's.
         let code = unsafe { (host.dispatch)(context, &raw mut dispatch.header) };
@@ -474,7 +475,13 @@ extern "C" fn ffxDispatch(context: *mut *mut c_void, desc: *mut Header) -> u32 {
         }
         code
     })
-    .unwrap_or(PARAMETER)
+    .unwrap_or(PARAMETER);
+    if code == OK && !output.is_null() {
+        victory_gpu::external::texture_written(list, output);
+    } else if code != OK {
+        once!(warn, code, "FidelityFX: the host rejected an upscaling dispatch");
+    }
+    code
 }
 
 pub(crate) fn module() -> HleModule {
