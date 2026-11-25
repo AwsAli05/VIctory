@@ -1182,6 +1182,7 @@ fn make_texture(d: &ResourceDesc, state: u32, clear: *const c_void) -> Option<Ho
         value[0] = pc_format(value[0]);
         value
     });
+    let clear_format = clear_value.map(|value| value[0]);
     let clear_value = clear_value.as_ref().map(|v| std::ptr::from_ref(v).cast::<D3D12_CLEAR_VALUE>());
     let heap = D3D12_HEAP_PROPERTIES {
         Type: D3D12_HEAP_TYPE_DEFAULT,
@@ -1250,7 +1251,14 @@ fn make_texture(d: &ResourceDesc, state: u32, clear: *const c_void) -> Option<Ho
             )
         };
         if let Err(e) = made {
-            tracing::warn!(error = %e, desc = ?d, "no host texture");
+            tracing::warn!(
+                error = %e,
+                desc = ?d,
+                host_state = format_args!("{initial:#x}"),
+                title_state = format_args!("{state:#x}"),
+                ?clear_format,
+                "no host texture"
+            );
         }
     }
     let texture = texture?;
