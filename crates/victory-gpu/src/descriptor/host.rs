@@ -661,11 +661,11 @@ impl HostHeap {
     fn address_at(&self, index: u32) -> Option<u64> {
         let (buffer, data, _) = self.addresses.get()?.as_ref()?;
         // SAFETY: a live buffer.
-        if 8 * u64::from(index) + 8 > unsafe { buffer.GetDesc() }.Width {
+        if 16 * u64::from(index) + 16 > unsafe { buffer.GetDesc() }.Width {
             return None;
         }
         // SAFETY: an entry of the mapped view addresses (checked).
-        let [lo, hi] = unsafe { ((data + 8 * index as usize) as *const [u32; 2]).read_unaligned() };
+        let [lo, hi] = unsafe { ((data + 16 * index as usize) as *const [u32; 2]).read_unaligned() };
         Some(u64::from(hi) << 32 | u64::from(lo))
     }
 

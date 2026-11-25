@@ -3617,17 +3617,15 @@ mod tests {
     }
 
     #[test]
-    fn target_format_is_identity_for_non_packed_formats() {
+    fn target_format_preserves_the_host_mapping_for_non_packed_formats() {
         for format in 0..=200u32 {
             if PACKED_16.contains(&format) {
                 assert!(
                     [format, RGBA8_UNORM].contains(&target_format(format)),
                     "unexpected target format for {format}"
                 );
-            } else if (118..=120).contains(&format) {
-                assert_eq!(target_format(format), format - 118 + 45);
             } else {
-                assert_eq!(target_format(format), format, "format {format}");
+                assert_eq!(target_format(format), pc_format(format), "format {format}");
             }
         }
     }
