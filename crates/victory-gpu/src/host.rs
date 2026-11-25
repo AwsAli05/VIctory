@@ -2735,12 +2735,17 @@ impl Host {
                 match create_compositor(&self.device, format) {
                     Ok(c) => p.compositor = Some(c),
                     Err(e) => {
-                        tracing::warn!(error = %e, "no present compositor");
-                        return None;
+                        // The frame is still shown: its first plane alone, as
+                        // a single-plane present would.
+                        tracing::warn!(
+                            error = %e,
+                            "no present compositor; presenting the first plane"
+                        );
+                        p.compositor = None;
                     }
                 }
             }
-            Some(p.compositor.as_ref()?)
+            p.compositor.as_ref()
         } else {
             None
         };
@@ -2752,7 +2757,8 @@ impl Host {
             };
             p.copy.reset();
             let list = &p.copy.list;
-            let (capture, probe) = if planes.len() == 1 {
+            // One plane, or no compositor to combine several: copy the first.
+            let (capture, probe) = if planes.len() == 1 || compositor.is_none() {
                 let (texture, state) = planes[0];
                 let state = D3D12_RESOURCE_STATES(state as i32);
                 let mut before = Vec::with_capacity(2);
@@ -2789,7 +2795,7 @@ impl Host {
                 list.ResourceBarrier(&after);
                 (capture, probe)
             } else {
-                let comp = compositor.expect("compositor was created for multiple planes");
+                let comp = compositor?;
                 let rtv = comp.rtv_heap.GetCPUDescriptorHandleForHeapStart();
                 self.device.CreateRenderTargetView(
                     &back,
@@ -3472,6 +3478,8 @@ mod present_plane_tests {
             "single-plane control"
         );
         let mut attempted = false;
+        // A failing compositor still presents the frame: its first plane, as
+        // a single-plane present does, instead of dropping it.
         assert!(
             host.present_with_compositor(
                 &[(&scene, state), (&overlay, state)],
@@ -3484,8 +3492,8 @@ mod present_plane_tests {
                 },
                 |_, _| {},
             )
-            .is_none(),
-            "injected compositor failure"
+            .is_some(),
+            "the frame is presented after a compositor failure"
         );
         assert!(attempted);
         assert!(
